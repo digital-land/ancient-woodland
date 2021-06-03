@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>NEWGATE/CROSSCLIFF WOOD | Ancient-woodland | Digital Land</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
+<link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin="" />
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+	integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+	crossorigin=""></script>
+
+<!-- assets needed for fullscreen maps -->
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+<!-- script needed for recentring map -->
+<script src="https://digital-land.github.io/javascripts/Leaflet.recentre.js"></script>
+
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div><header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="header-proposition">
+      <div class="govuk-header__content">
+        <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+        Digital Land
+        </a>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>        <nav>
+          <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/about">Team</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/project/">Projects</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/weeknote/">Weeknotes</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/blog-post/">Blog</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/guidance/">Guidance</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/dataset/">Datasets</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/organisation/">Organisations</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/map/">Map</a>
+            </li>
+          </ul>
+        </nav>
+</div>
+    </div>
+  </div>
+</header>
+
+      <div class="govuk-width-container ">
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  prototype
+</strong><span class="govuk-phase-banner__text">
+      This is a prototype. Please provide feedback to the Digital Land team.
+    </span>
+  </p>
+</div><div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../../">Ancient Woodland</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../">Ancient Woodland</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">ancient-woodland:1103949</li>
+  </ol>
+</div>        <main class="govuk-main-wrapper " id="main-content" role="main">
+
+<span class="govuk-caption-xl">Ancient woodland</span>
+    <h1 class="govuk-heading-xl">NEWGATE/CROSSCLIFF WOOD</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li><li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#referenced-by" data-module-sub-nav="tab">
+                0 References
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+<div id="record">
+<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
+    <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1103949</h4>
+    <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                NEWGATE/CROSSCLIFF WOOD            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                ancient-woodland:1103949            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">entry-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2021-05-26            </dd>
+        </div>    
+    </dl></article>
+</div>
+            
+</div>
+
+    <h2 class="govuk-heading-m">Geographical area</h2>
+
+    <div class="dl-map__wrapper"><div 
+    class="dl-map govuk-!-margin-top-4"
+    id="dlMap"
+    data-module="boundary-map"
+    style="height: 460px;" data-geojson-urls="geometry.geojson"   
+>
+    <noscript>To view this map, you need to enable JavaScript.</noscript>
+</div>
+        <div class="dl-map__note-panel">
+            <a class="js-hidden dl-link-national-map" href="">See geometry on national map.</a>
+        </div>
+    </div>
+
+    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
+    </div>
+<h3 class="govuk-heading-m">Associated information</h3>
+
+<ul class="govuk-list govuk-list--bullet">
+    <li><a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a></li></ul>
+
+</div>
+
+<div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>geometry</th>
+            <th>name</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40438">89632d544d34...</a></td>
+            <td>40437</td>
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.647913 54.315113,-0.645220 54.314747,-0.642325 54.314295,-0.639799 54.313944,-0.637993 54.313505,-0.636792 54.313136,-0.631098 54.311830,-0.629943 54.311737,-0.628848 54.311498,-0.628823 54.311417,-0.628498 54.311236,-0.629361 54.311222,-0.630335 54.311364,-0.633163 54.312022,-0.637187 54.313131,-0.640066 54.313698,-0.642398 54.314013,-0.647913 54.315113)))
+  </div>
+</details>
+                </td>
+                <td>NEWGATE/CROSSCLIFF WOOD</td> 
+                <td>ancient-woodland:1103949</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40444">89632d544d34...</a></td>
+            <td>40443</td>
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.648288 54.316024,-0.648044 54.315884,-0.648308 54.316000,-0.649934 54.316492,-0.649585 54.316803,-0.649256 54.316501,-0.648884 54.316276,-0.648946 54.316227,-0.648288 54.316024)))
+  </div>
+</details>
+                </td>
+                <td>NEWGATE/CROSSCLIFF WOOD</td> 
+                <td>ancient-woodland:1103949</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40450">89632d544d34...</a></td>
+            <td>40449</td>
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.654918 54.318468,-0.655281 54.318427,-0.655643 54.318653,-0.656070 54.319093,-0.656361 54.319451,-0.656984 54.319829,-0.657134 54.320299,-0.657392 54.320834,-0.657980 54.321751,-0.657263 54.321238,-0.656875 54.320874,-0.656189 54.320364,-0.655539 54.319941,-0.654407 54.319280,-0.653863 54.318870,-0.654918 54.318468)))
+  </div>
+</details>
+                </td>
+                <td>NEWGATE/CROSSCLIFF WOOD</td> 
+                <td>ancient-woodland:1103949</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40439">89632d544d34...</a></td>
+            <td>40438</td>
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.651512 54.317376,-0.651309 54.317332,-0.650730 54.317373,-0.650530 54.317275,-0.650314 54.317031,-0.649900 54.316856,-0.649644 54.316852,-0.649585 54.316803,-0.649934 54.316492,-0.648308 54.316000,-0.647331 54.315569,-0.646869 54.315483,-0.646314 54.315433,-0.644675 54.315096,-0.644781 54.315049,-0.646303 54.315388,-0.646639 54.315410,-0.647554 54.315564,-0.648097 54.315839,-0.649858 54.316378,-0.650219 54.316579,-0.650571 54.317067,-0.650995 54.317215,-0.651577 54.317240,-0.652006 54.317652,-0.651833 54.317596,-0.651573 54.317389,-0.651512 54.317376)))
+  </div>
+</details>
+                </td>
+                <td>NEWGATE/CROSSCLIFF WOOD</td> 
+                <td>ancient-woodland:1103949</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40441">89632d544d34...</a></td>
+            <td>40440</td>
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.611394 54.320817,-0.611226 54.320744,-0.610762 54.320748,-0.610466 54.320835,-0.610183 54.321042,-0.610115 54.321016,-0.610479 54.320739,-0.611063 54.320642,-0.611691 54.320684,-0.612092 54.320458,-0.612905 54.320272,-0.613324 54.320104,-0.613684 54.320036,-0.613618 54.320097,-0.613596 54.320074,-0.613488 54.320091,-0.613282 54.320251,-0.613293 54.320386,-0.613235 54.320526,-0.613022 54.320718,-0.613035 54.320779,-0.612970 54.320796,-0.612958 54.320880,-0.612836 54.320844,-0.612804 54.320723,-0.612822 54.320633,-0.612764 54.320525,-0.612407 54.320457,-0.612195 54.320569,-0.612005 54.320729,-0.612165 54.320829,-0.612050 54.320907,-0.612225 54.320998,-0.612020 54.321128,-0.611580 54.321140,-0.611443 54.321173,-0.611242 54.321145,-0.611042 54.321071,-0.611306 54.321060,-0.611401 54.321007,-0.611247 54.320914,-0.611377 54.320898,-0.611394 54.320817)))
+  </div>
+</details>
+                </td>
+                <td>NEWGATE/CROSSCLIFF WOOD</td> 
+                <td>ancient-woodland:1103949</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40452">89632d544d34...</a></td>
+            <td>40451</td>
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.668591 54.329044,-0.668254 54.329020,-0.667766 54.328617,-0.666506 54.327690,-0.666556 54.327554,-0.666000 54.327231,-0.665872 54.327043,-0.665730 54.326912,-0.664581 54.326073,-0.664307 54.326109,-0.663658 54.325702,-0.663420 54.325507,-0.662215 54.324844,-0.661848 54.324527,-0.661322 54.324201,-0.659769 54.323030,-0.659351 54.322593,-0.658966 54.322646,-0.658941 54.322558,-0.659011 54.322565,-0.659115 54.322171,-0.658937 54.320973,-0.659004 54.321018,-0.659023 54.321167,-0.659095 54.321188,-0.660576 54.322737,-0.661422 54.323385,-0.662753 54.324301,-0.663423 54.324705,-0.663455 54.324758,-0.663791 54.324689,-0.665959 54.326220,-0.668540 54.328423,-0.668410 54.328495,-0.668618 54.328720,-0.668738 54.328915,-0.668705 54.329047,-0.668591 54.329044)))
+  </div>
+</details>
+                </td>
+                <td>NEWGATE/CROSSCLIFF WOOD</td> 
+                <td>ancient-woodland:1103949</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40437">89632d544d34...</a></td>
+            <td>40436</td>
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.626951 54.313599,-0.627763 54.313436,-0.628549 54.313468,-0.628878 54.313621,-0.629348 54.313684,-0.629595 54.313770,-0.629029 54.313778,-0.628769 54.313672,-0.628658 54.313585,-0.628488 54.313574,-0.628224 54.313616,-0.627747 54.313531,-0.626720 54.313746,-0.626451 54.313752,-0.626558 54.313622,-0.626951 54.313599)))
+  </div>
+</details>
+                </td>
+                <td>NEWGATE/CROSSCLIFF WOOD</td> 
+                <td>ancient-woodland:1103949</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40443">89632d544d34...</a></td>
+            <td>40442</td>
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.629595 54.313770,-0.629491 54.313897,-0.629042 54.313866,-0.628882 54.313828,-0.628702 54.313700,-0.628580 54.313663,-0.628056 54.313697,-0.627698 54.313608,-0.627132 54.313763,-0.626738 54.313817,-0.626662 54.313747,-0.627747 54.313531,-0.628224 54.313616,-0.628488 54.313574,-0.628658 54.313585,-0.628769 54.313672,-0.629029 54.313778,-0.629595 54.313770)))
+  </div>
+</details>
+                </td>
+                <td>NEWGATE/CROSSCLIFF WOOD</td> 
+                <td>ancient-woodland:1103949</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40447">89632d544d34...</a></td>
+            <td>40446</td>
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.612195 54.320569,-0.612407 54.320457,-0.612764 54.320525,-0.612822 54.320633,-0.612808 54.320702,-0.612685 54.320562,-0.612473 54.320530,-0.612194 54.320623,-0.612051 54.320758,-0.612005 54.320729,-0.612195 54.320569)))
+  </div>
+</details>
+                </td>
+                <td>NEWGATE/CROSSCLIFF WOOD</td> 
+                <td>ancient-woodland:1103949</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40451">89632d544d34...</a></td>
+            <td>40450</td>
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.611223 54.321241,-0.611020 54.321167,-0.610875 54.321037,-0.610962 54.321019,-0.611242 54.321145,-0.611443 54.321173,-0.611580 54.321140,-0.612020 54.321128,-0.612229 54.320997,-0.612109 54.321165,-0.611883 54.321239,-0.611223 54.321241)))
+  </div>
+</details>
+                </td>
+                <td>NEWGATE/CROSSCLIFF WOOD</td> 
+                <td>ancient-woodland:1103949</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40445">89632d544d34...</a></td>
+            <td>40444</td>
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.616158 54.319846,-0.616086 54.319749,-0.615920 54.319727,-0.615807 54.319651,-0.616128 54.319676,-0.616201 54.319839,-0.616707 54.319758,-0.616683 54.319826,-0.616620 54.319861,-0.616425 54.319847,-0.616244 54.319891,-0.616158 54.319846)))
+  </div>
+</details>
+                </td>
+                <td>NEWGATE/CROSSCLIFF WOOD</td> 
+                <td>ancient-woodland:1103949</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40446">89632d544d34...</a></td>
+            <td>40445</td>
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.613282 54.320251,-0.613488 54.320091,-0.613596 54.320074,-0.613618 54.320097,-0.613286 54.320306,-0.613282 54.320251)))
+  </div>
+</details>
+                </td>
+                <td>NEWGATE/CROSSCLIFF WOOD</td> 
+                <td>ancient-woodland:1103949</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40449">89632d544d34...</a></td>
+            <td>40448</td>
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.610466 54.320835,-0.610762 54.320748,-0.611226 54.320744,-0.611394 54.320817,-0.611378 54.320893,-0.611250 54.320831,-0.610710 54.320841,-0.610523 54.320895,-0.610245 54.321048,-0.610183 54.321042,-0.610466 54.320835)))
+  </div>
+</details>
+                </td>
+                <td>NEWGATE/CROSSCLIFF WOOD</td> 
+                <td>ancient-woodland:1103949</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40448">89632d544d34...</a></td>
+            <td>40447</td>
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.629595 54.313770,-0.629348 54.313684,-0.628878 54.313621,-0.628549 54.313468,-0.627763 54.313436,-0.626951 54.313599,-0.626558 54.313622,-0.626685 54.313330,-0.626581 54.313220,-0.626396 54.313207,-0.625916 54.312991,-0.625729 54.312948,-0.624689 54.313116,-0.623234 54.313464,-0.622127 54.313880,-0.621306 54.314242,-0.620855 54.314601,-0.620053 54.314963,-0.618614 54.315420,-0.617968 54.315801,-0.616724 54.316323,-0.615978 54.316556,-0.615225 54.317006,-0.615851 54.317580,-0.615053 54.318002,-0.615989 54.318956,-0.616587 54.319388,-0.616353 54.319552,-0.615998 54.319594,-0.615729 54.319598,-0.615692 54.319573,-0.614997 54.319673,-0.614629 54.319642,-0.613741 54.319982,-0.613684 54.320036,-0.613324 54.320104,-0.612905 54.320272,-0.612092 54.320458,-0.611691 54.320684,-0.611063 54.320642,-0.610479 54.320739,-0.610115 54.321016,-0.609926 54.320963,-0.609840 54.320774,-0.609758 54.320476,-0.610089 54.320237,-0.611587 54.319580,-0.611738 54.319204,-0.611612 54.318852,-0.611343 54.318606,-0.611488 54.318420,-0.611861 54.318289,-0.612611 54.317947,-0.612799 54.317841,-0.612895 54.317708,-0.612853 54.317599,-0.612716 54.317544,-0.612208 54.317592,-0.610955 54.317820,-0.610820 54.317711,-0.610918 54.317550,-0.611108 54.317363,-0.613424 54.315718,-0.614357 54.315405,-0.617705 54.313840,-0.618190 54.314205,-0.620243 54.313073,-0.621114 54.312671,-0.622150 54.312265,-0.622812 54.311964,-0.623769 54.311603,-0.624582 54.311434,-0.625496 54.311199,-0.626431 54.311105,-0.627427 54.311065,-0.628500 54.311082,-0.629361 54.311222,-0.628498 54.311236,-0.628823 54.311417,-0.628848 54.311498,-0.629943 54.311737,-0.631098 54.311830,-0.636792 54.313136,-0.637993 54.313505,-0.639799 54.313944,-0.642325 54.314295,-0.645220 54.314747,-0.647913 54.315113,-0.650531 54.315968,-0.651021 54.316198,-0.652124 54.316598,-0.653075 54.317044,-0.654077 54.317620,-0.654606 54.317995,-0.654544 54.318077,-0.654123 54.318314,-0.653535 54.318556,-0.653229 54.318298,-0.652620 54.317952,-0.652006 54.317652,-0.651577 54.317240,-0.650995 54.317215,-0.650571 54.317067,-0.650219 54.316579,-0.649858 54.316378,-0.648097 54.315839,-0.647554 54.315564,-0.646639 54.315410,-0.646303 54.315388,-0.644781 54.315049,-0.644675 54.315096,-0.641448 54.314650,-0.640325 54.314469,-0.638864 54.314167,-0.637684 54.314013,-0.637623 54.314150,-0.635874 54.313806,-0.635862 54.313834,-0.635565 54.313818,-0.635122 54.313601,-0.634887 54.313707,-0.634157 54.313692,-0.633373 54.313468,-0.632590 54.313095,-0.632564 54.313053,-0.631878 54.312701,-0.631550 54.312595,-0.630646 54.312447,-0.629595 54.313770)))
+  </div>
+</details>
+                </td>
+                <td>NEWGATE/CROSSCLIFF WOOD</td> 
+                <td>ancient-woodland:1103949</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40442">89632d544d34...</a></td>
+            <td>40441</td>
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.647913 54.315113,-0.648767 54.315312,-0.650487 54.315832,-0.651201 54.316108,-0.652574 54.316516,-0.654810 54.317725,-0.656016 54.318473,-0.658720 54.320759,-0.658989 54.321303,-0.659115 54.322171,-0.659034 54.322478,-0.657980 54.321751,-0.657392 54.320834,-0.657134 54.320299,-0.656984 54.319829,-0.656361 54.319451,-0.656070 54.319093,-0.655643 54.318653,-0.655281 54.318427,-0.654918 54.318468,-0.653863 54.318870,-0.652702 54.318010,-0.653229 54.318298,-0.653535 54.318556,-0.654123 54.318314,-0.654544 54.318077,-0.654606 54.317995,-0.654077 54.317620,-0.653075 54.317044,-0.652124 54.316598,-0.651021 54.316198,-0.650531 54.315968,-0.647913 54.315113)))
+  </div>
+</details>
+                </td>
+                <td>NEWGATE/CROSSCLIFF WOOD</td> 
+                <td>ancient-woodland:1103949</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40440">89632d544d34...</a></td>
+            <td>40439</td>
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.616353 54.319552,-0.616587 54.319388,-0.616716 54.319474,-0.616749 54.319598,-0.616714 54.319736,-0.616201 54.319839,-0.616128 54.319676,-0.615807 54.319651,-0.615729 54.319598,-0.616353 54.319552)))
+  </div>
+</details>
+                </td>
+                <td>NEWGATE/CROSSCLIFF WOOD</td> 
+                <td>ancient-woodland:1103949</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
+</div>
+</div><div id="referenced-by">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-m dlf-subnav__heading">Referenced by</h2>
+            <p class="govuk-body">This record is referenced by 0 other planning related data records.</p>
+</div>
+    </div>
+</div>
+        </main>
+      </div>
+
+    <div class="dlf-feedback__wrapper">
+    <div class="dlf-feedback">
+    <div class="dlf-feedback__prompt">
+        <div class="dlf-feedback__prompt-content">
+            <span class="dlf-feedback__prompt-content__text">Spotted an issue? Let us know so we can improve the data.</span>
+        </div>
+        <div class="dlf-feedback__prompt-action">
+            <a href="mailto:digitalLand@communities.gov.uk?subject=Feedback on (geography) NEWGATE/CROSSCLIFF WOOD -- ancient-woodland" class="govuk-button dlf-feedback__prompt__link">There is something wrong with the data</a>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<footer class="govuk-footer " role="contentinfo"
+>
+  <div class="govuk-width-container ">
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+          <h2 class="govuk-visually-hidden">Support links</h2>              <ul class="govuk-footer__inline-list">
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+              </ul>
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
+
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+
+<script>
+    const datasetName = "ancient-woodland"
+    const $mapElement = document.querySelector('[data-module="boundary-map"]')
+    const $nationalMapLink = document.querySelector('.dl-link-national-map')
+    const mapComponent = new DLMaps.Map($mapElement).init({
+        initZoomCallback: function (featureGroup) {
+            console.log("initial load completed")
+            // do we need to check there isn't more than one shape?
+            const center = featureGroup.getBounds().getCenter()
+            const zoom = mapComponent.map.getZoom()
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            console.log(url)
+            if ($nationalMapLink) {
+                // only show this for the datasets we've added to the national map
+                $nationalMapLink.href = url
+                $nationalMapLink.classList.remove("js-hidden")
+            }
+        }
+    })
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
+    })
+</script>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
+</html>
