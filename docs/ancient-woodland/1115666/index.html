@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -213,24 +216,6 @@ crossorigin="" />
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L26120">89632d544d34...</a></td>
-            <td>26119</td>
-                <td>CLEY PARK</td> 
-                <td>ancient-woodland:1115666</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((1.075450 52.922885,1.075271 52.923131,1.075171 52.923390,1.075120 52.923893,1.075137 52.924218,1.075177 52.924358,1.075155 52.924591,1.075356 52.924827,1.075422 52.925130,1.075840 52.925635,1.076040 52.925962,1.076042 52.926046,1.075956 52.926254,1.075605 52.926314,1.075651 52.926598,1.075753 52.926816,1.077643 52.927094,1.078522 52.927170,1.078499 52.927040,1.078810 52.926610,1.079862 52.924825,1.079518 52.923528,1.078811 52.922137,1.078634 52.922116,1.078413 52.922150,1.077980 52.922229,1.077543 52.922358,1.077455 52.922323,1.075450 52.922885)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L26119">89632d544d34...</a></td>
             <td>26118</td>
                 <td>CLEY PARK</td> 
@@ -244,6 +229,24 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((1.075450 52.922885,1.077455 52.922323,1.077543 52.922358,1.077980 52.922229,1.078413 52.922150,1.078634 52.922116,1.078811 52.922137,1.078473 52.921474,1.078480 52.921315,1.078431 52.921230,1.078187 52.921048,1.078082 52.921098,1.077792 52.920884,1.077757 52.920904,1.077679 52.920855,1.077701 52.920832,1.077607 52.920772,1.077302 52.920910,1.077278 52.920986,1.076927 52.921177,1.076417 52.921622,1.076083 52.922096,1.075450 52.922885)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L26120">89632d544d34...</a></td>
+            <td>26119</td>
+                <td>CLEY PARK</td> 
+                <td>ancient-woodland:1115666</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((1.075450 52.922885,1.075271 52.923131,1.075171 52.923390,1.075120 52.923893,1.075137 52.924218,1.075177 52.924358,1.075155 52.924591,1.075356 52.924827,1.075422 52.925130,1.075840 52.925635,1.076040 52.925962,1.076042 52.926046,1.075956 52.926254,1.075605 52.926314,1.075651 52.926598,1.075753 52.926816,1.077643 52.927094,1.078522 52.927170,1.078499 52.927040,1.078810 52.926610,1.079862 52.924825,1.079518 52.923528,1.078811 52.922137,1.078634 52.922116,1.078413 52.922150,1.077980 52.922229,1.077543 52.922358,1.077455 52.922323,1.075450 52.922885)))
   </div>
 </details>
                 </td>

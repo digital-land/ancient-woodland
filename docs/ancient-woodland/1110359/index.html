@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,13 +157,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1110359</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                HOOKSWOOD COPPICE/FARNHAM WOODS            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                ancient-woodland:1110359            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                HOOKSWOOD COPPICE/FARNHAM WOODS            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -206,17 +209,35 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L35085">89632d544d34...</a></td>
+            <td>35084</td>
+                <td>ancient-woodland:1110359</td> 
+                <td>HOOKSWOOD COPPICE/FARNHAM WOODS</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.083978 50.941195,-2.083784 50.940847,-2.083694 50.940873,-2.083636 50.940841,-2.083228 50.940828,-2.082567 50.940665,-2.082056 50.940251,-2.081072 50.939881,-2.081477 50.939532,-2.080621 50.939465,-2.079516 50.939326,-2.079156 50.939149,-2.079083 50.939073,-2.078302 50.938633,-2.078007 50.938506,-2.077680 50.938419,-2.077015 50.938311,-2.076568 50.938362,-2.076287 50.938466,-2.075987 50.938676,-2.075917 50.939322,-2.075810 50.939479,-2.075617 50.939614,-2.074889 50.939442,-2.074377 50.939254,-2.074355 50.939240,-2.074413 50.938925,-2.074606 50.938598,-2.075126 50.938154,-2.075778 50.937346,-2.076340 50.936988,-2.076706 50.936662,-2.076948 50.936545,-2.077144 50.936499,-2.077648 50.936466,-2.078685 50.936765,-2.078759 50.936769,-2.078837 50.936712,-2.079249 50.936886,-2.079422 50.936854,-2.079802 50.936901,-2.080311 50.937058,-2.080738 50.937131,-2.081266 50.937127,-2.082349 50.937231,-2.082894 50.937379,-2.083429 50.937435,-2.084518 50.937637,-2.085097 50.937824,-2.085191 50.937978,-2.085445 50.938565,-2.085526 50.939653,-2.085689 50.939969,-2.086564 50.940390,-2.087072 50.940675,-2.087129 50.940753,-2.086861 50.940697,-2.084109 50.941202,-2.083991 50.941221,-2.083978 50.941195)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L35086">89632d544d34...</a></td>
             <td>35085</td>
-                <td>HOOKSWOOD COPPICE/FARNHAM WOODS</td> 
                 <td>ancient-woodland:1110359</td> 
+                <td>HOOKSWOOD COPPICE/FARNHAM WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -233,8 +254,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L35084">89632d544d34...</a></td>
             <td>35083</td>
-                <td>HOOKSWOOD COPPICE/FARNHAM WOODS</td> 
                 <td>ancient-woodland:1110359</td> 
+                <td>HOOKSWOOD COPPICE/FARNHAM WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -244,24 +265,6 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-2.095303 50.931027,-2.095678 50.931121,-2.095934 50.931335,-2.096446 50.931449,-2.097035 50.931914,-2.097056 50.932041,-2.096018 50.932924,-2.095759 50.933111,-2.095404 50.933534,-2.095076 50.933705,-2.094486 50.934153,-2.093986 50.934332,-2.093821 50.934421,-2.093687 50.934540,-2.093600 50.934708,-2.092294 50.934309,-2.092582 50.934043,-2.093277 50.933771,-2.093486 50.933642,-2.093590 50.933507,-2.093770 50.933136,-2.093909 50.932924,-2.094052 50.932441,-2.094376 50.931809,-2.094981 50.931220,-2.095303 50.931027)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L35085">89632d544d34...</a></td>
-            <td>35084</td>
-                <td>HOOKSWOOD COPPICE/FARNHAM WOODS</td> 
-                <td>ancient-woodland:1110359</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.083978 50.941195,-2.083784 50.940847,-2.083694 50.940873,-2.083636 50.940841,-2.083228 50.940828,-2.082567 50.940665,-2.082056 50.940251,-2.081072 50.939881,-2.081477 50.939532,-2.080621 50.939465,-2.079516 50.939326,-2.079156 50.939149,-2.079083 50.939073,-2.078302 50.938633,-2.078007 50.938506,-2.077680 50.938419,-2.077015 50.938311,-2.076568 50.938362,-2.076287 50.938466,-2.075987 50.938676,-2.075917 50.939322,-2.075810 50.939479,-2.075617 50.939614,-2.074889 50.939442,-2.074377 50.939254,-2.074355 50.939240,-2.074413 50.938925,-2.074606 50.938598,-2.075126 50.938154,-2.075778 50.937346,-2.076340 50.936988,-2.076706 50.936662,-2.076948 50.936545,-2.077144 50.936499,-2.077648 50.936466,-2.078685 50.936765,-2.078759 50.936769,-2.078837 50.936712,-2.079249 50.936886,-2.079422 50.936854,-2.079802 50.936901,-2.080311 50.937058,-2.080738 50.937131,-2.081266 50.937127,-2.082349 50.937231,-2.082894 50.937379,-2.083429 50.937435,-2.084518 50.937637,-2.085097 50.937824,-2.085191 50.937978,-2.085445 50.938565,-2.085526 50.939653,-2.085689 50.939969,-2.086564 50.940390,-2.087072 50.940675,-2.087129 50.940753,-2.086861 50.940697,-2.084109 50.941202,-2.083991 50.941221,-2.083978 50.941195)))
   </div>
 </details>
                 </td>

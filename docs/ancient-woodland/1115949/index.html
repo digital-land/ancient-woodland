@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,13 +157,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1115949</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                WESTBURY/ANGELS WOODS            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                ancient-woodland:1115949            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                WESTBURY/ANGELS WOODS            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -206,8 +209,8 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
@@ -215,8 +218,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L50577">89632d544d34...</a></td>
             <td>50576</td>
-                <td>WESTBURY/ANGELS WOODS</td> 
                 <td>ancient-woodland:1115949</td> 
+                <td>WESTBURY/ANGELS WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -231,28 +234,10 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L50581">89632d544d34...</a></td>
-            <td>50580</td>
-                <td>WESTBURY/ANGELS WOODS</td> 
-                <td>ancient-woodland:1115949</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.344461 51.920776,-0.343970 51.920487,-0.343178 51.920160,-0.342737 51.920015,-0.342435 51.919849,-0.343943 51.918764,-0.344065 51.918594,-0.344116 51.918258,-0.344219 51.918181,-0.344561 51.917994,-0.345618 51.917553,-0.346182 51.917421,-0.346368 51.917755,-0.346667 51.918015,-0.347647 51.918499,-0.347634 51.918595,-0.347579 51.918643,-0.346647 51.919195,-0.346465 51.919388,-0.346327 51.919614,-0.346150 51.919779,-0.345399 51.920252,-0.344461 51.920776)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L50578">89632d544d34...</a></td>
             <td>50577</td>
-                <td>WESTBURY/ANGELS WOODS</td> 
                 <td>ancient-woodland:1115949</td> 
+                <td>WESTBURY/ANGELS WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -267,10 +252,10 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L50579">89632d544d34...</a></td>
-            <td>50578</td>
-                <td>WESTBURY/ANGELS WOODS</td> 
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L50581">89632d544d34...</a></td>
+            <td>50580</td>
                 <td>ancient-woodland:1115949</td> 
+                <td>WESTBURY/ANGELS WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -279,7 +264,7 @@ crossorigin="" />
     </span>
   </summary>
   <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.336623 51.914177,-0.336509 51.913838,-0.336381 51.913603,-0.338636 51.912984,-0.339369 51.913360,-0.339876 51.913865,-0.340452 51.914367,-0.340422 51.914387,-0.339566 51.914226,-0.339159 51.914202,-0.337204 51.914317,-0.336715 51.914373,-0.336623 51.914177)))
+    MULTIPOLYGON (((-0.344461 51.920776,-0.343970 51.920487,-0.343178 51.920160,-0.342737 51.920015,-0.342435 51.919849,-0.343943 51.918764,-0.344065 51.918594,-0.344116 51.918258,-0.344219 51.918181,-0.344561 51.917994,-0.345618 51.917553,-0.346182 51.917421,-0.346368 51.917755,-0.346667 51.918015,-0.347647 51.918499,-0.347634 51.918595,-0.347579 51.918643,-0.346647 51.919195,-0.346465 51.919388,-0.346327 51.919614,-0.346150 51.919779,-0.345399 51.920252,-0.344461 51.920776)))
   </div>
 </details>
                 </td>
@@ -287,8 +272,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L50580">89632d544d34...</a></td>
             <td>50579</td>
-                <td>WESTBURY/ANGELS WOODS</td> 
                 <td>ancient-woodland:1115949</td> 
+                <td>WESTBURY/ANGELS WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -298,6 +283,24 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-0.340236 51.918115,-0.339889 51.917594,-0.339635 51.917619,-0.339605 51.917652,-0.338391 51.917948,-0.337640 51.918057,-0.337139 51.917415,-0.337152 51.917253,-0.338157 51.917044,-0.339130 51.916583,-0.339198 51.916607,-0.340215 51.916535,-0.341076 51.916381,-0.341350 51.916820,-0.341276 51.917056,-0.341081 51.917438,-0.341103 51.917449,-0.340972 51.917810,-0.340963 51.917968,-0.340236 51.918115)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L50579">89632d544d34...</a></td>
+            <td>50578</td>
+                <td>ancient-woodland:1115949</td> 
+                <td>WESTBURY/ANGELS WOODS</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.336623 51.914177,-0.336509 51.913838,-0.336381 51.913603,-0.338636 51.912984,-0.339369 51.913360,-0.339876 51.913865,-0.340452 51.914367,-0.340422 51.914387,-0.339566 51.914226,-0.339159 51.914202,-0.337204 51.914317,-0.336715 51.914373,-0.336623 51.914177)))
   </div>
 </details>
                 </td>

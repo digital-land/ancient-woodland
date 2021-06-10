@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -206,17 +209,35 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21519">89632d544d34...</a></td>
+            <td>21518</td>
+                <td>ancient-woodland:1116911</td> 
+                <td>BARTON SHRUB</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((0.779168 52.254742,0.779237 52.254958,0.779341 52.255747,0.779630 52.256602,0.780131 52.256734,0.780876 52.257056,0.780957 52.257070,0.781183 52.256610,0.781810 52.256302,0.782239 52.255863,0.782368 52.255774,0.782408 52.255697,0.781844 52.254446,0.781218 52.254548,0.780850 52.254558,0.779832 52.254694,0.779168 52.254742)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21517">89632d544d34...</a></td>
             <td>21516</td>
-                <td>BARTON SHRUB</td> 
                 <td>ancient-woodland:1116911</td> 
+                <td>BARTON SHRUB</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -233,8 +254,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21518">89632d544d34...</a></td>
             <td>21517</td>
-                <td>BARTON SHRUB</td> 
                 <td>ancient-woodland:1116911</td> 
+                <td>BARTON SHRUB</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -244,24 +265,6 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((0.782982 52.257192,0.782891 52.256860,0.782809 52.256698,0.782808 52.256616,0.782594 52.256091,0.782466 52.256106,0.782443 52.256029,0.782570 52.255997,0.782435 52.256016,0.782368 52.255773,0.782239 52.255863,0.781810 52.256302,0.781171 52.256621,0.780957 52.257070,0.781660 52.257191,0.782982 52.257192)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21519">89632d544d34...</a></td>
-            <td>21518</td>
-                <td>BARTON SHRUB</td> 
-                <td>ancient-woodland:1116911</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((0.779168 52.254742,0.779237 52.254958,0.779341 52.255747,0.779630 52.256602,0.780131 52.256734,0.780876 52.257056,0.780957 52.257070,0.781183 52.256610,0.781810 52.256302,0.782239 52.255863,0.782368 52.255774,0.782408 52.255697,0.781844 52.254446,0.781218 52.254548,0.780850 52.254558,0.779832 52.254694,0.779168 52.254742)))
   </div>
 </details>
                 </td>

@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -206,17 +209,35 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L47979">89632d544d34...</a></td>
+            <td>47978</td>
+                <td>ancient-woodland:1115841</td> 
+                <td>SWINESHEAD WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.449728 52.287073,-0.449962 52.287005,-0.450031 52.287036,-0.450060 52.287005,-0.450032 52.286984,-0.450846 52.286649,-0.451539 52.287014,-0.453303 52.287820,-0.452598 52.288019,-0.452414 52.288160,-0.452340 52.288406,-0.452312 52.288702,-0.452395 52.288973,-0.452389 52.289101,-0.452006 52.289609,-0.451488 52.289963,-0.450694 52.290313,-0.450434 52.290084,-0.449966 52.289580,-0.449785 52.289336,-0.449481 52.288809,-0.449260 52.288594,-0.448131 52.287704,-0.448141 52.287595,-0.448216 52.287540,-0.449743 52.287134,-0.449728 52.287073)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L47978">89632d544d34...</a></td>
             <td>47977</td>
-                <td>SWINESHEAD WOOD</td> 
                 <td>ancient-woodland:1115841</td> 
+                <td>SWINESHEAD WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -233,8 +254,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L47980">89632d544d34...</a></td>
             <td>47979</td>
-                <td>SWINESHEAD WOOD</td> 
                 <td>ancient-woodland:1115841</td> 
+                <td>SWINESHEAD WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -244,24 +265,6 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-0.445337 52.292718,-0.444911 52.292719,-0.444743 52.292681,-0.443826 52.292206,-0.443171 52.291942,-0.443329 52.291814,-0.443314 52.291759,-0.446059 52.289672,-0.447316 52.291204,-0.447503 52.291541,-0.447337 52.291607,-0.447207 52.291717,-0.447124 52.291827,-0.446897 52.292320,-0.446669 52.292508,-0.446404 52.292610,-0.445613 52.292752,-0.445337 52.292718)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L47979">89632d544d34...</a></td>
-            <td>47978</td>
-                <td>SWINESHEAD WOOD</td> 
-                <td>ancient-woodland:1115841</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.449728 52.287073,-0.449962 52.287005,-0.450031 52.287036,-0.450060 52.287005,-0.450032 52.286984,-0.450846 52.286649,-0.451539 52.287014,-0.453303 52.287820,-0.452598 52.288019,-0.452414 52.288160,-0.452340 52.288406,-0.452312 52.288702,-0.452395 52.288973,-0.452389 52.289101,-0.452006 52.289609,-0.451488 52.289963,-0.450694 52.290313,-0.450434 52.290084,-0.449966 52.289580,-0.449785 52.289336,-0.449481 52.288809,-0.449260 52.288594,-0.448131 52.287704,-0.448141 52.287595,-0.448216 52.287540,-0.449743 52.287134,-0.449728 52.287073)))
   </div>
 </details>
                 </td>

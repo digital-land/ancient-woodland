@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,13 +157,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1117144</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                DUCHESS WOOD            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                ancient-woodland:1117144            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                DUCHESS WOOD            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -206,8 +209,8 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
@@ -215,8 +218,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28751">89632d544d34...</a></td>
             <td>28750</td>
-                <td>DUCHESS WOOD</td> 
                 <td>ancient-woodland:1117144</td> 
+                <td>DUCHESS WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -231,28 +234,10 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28750">89632d544d34...</a></td>
-            <td>28749</td>
-                <td>DUCHESS WOOD</td> 
-                <td>ancient-woodland:1117144</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((1.069820 52.308710,1.068967 52.308400,1.068223 52.308259,1.068330 52.307885,1.067423 52.307751,1.067517 52.306583,1.066907 52.306226,1.066877 52.306049,1.066788 52.305856,1.065761 52.305946,1.063894 52.305635,1.063623 52.306693,1.063282 52.308268,1.066869 52.308523,1.068009 52.309715,1.068440 52.309363,1.069002 52.309585,1.069516 52.309095,1.069820 52.308710)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28749">89632d544d34...</a></td>
             <td>28748</td>
-                <td>DUCHESS WOOD</td> 
                 <td>ancient-woodland:1117144</td> 
+                <td>DUCHESS WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -262,6 +247,24 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((1.069820 52.308710,1.074908 52.309076,1.075029 52.308994,1.075150 52.308843,1.075233 52.308577,1.075319 52.308421,1.075664 52.308126,1.075636 52.308101,1.075666 52.308073,1.075360 52.307967,1.074958 52.307911,1.074449 52.307908,1.073517 52.307973,1.072823 52.307923,1.072822 52.307898,1.071221 52.307425,1.070177 52.307206,1.070153 52.307590,1.070297 52.307871,1.069820 52.308710)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28750">89632d544d34...</a></td>
+            <td>28749</td>
+                <td>ancient-woodland:1117144</td> 
+                <td>DUCHESS WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((1.069820 52.308710,1.068967 52.308400,1.068223 52.308259,1.068330 52.307885,1.067423 52.307751,1.067517 52.306583,1.066907 52.306226,1.066877 52.306049,1.066788 52.305856,1.065761 52.305946,1.063894 52.305635,1.063623 52.306693,1.063282 52.308268,1.066869 52.308523,1.068009 52.309715,1.068440 52.309363,1.069002 52.309585,1.069516 52.309095,1.069820 52.308710)))
   </div>
 </details>
                 </td>

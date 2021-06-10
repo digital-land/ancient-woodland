@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,13 +157,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1109927</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                PEAKS WOOD            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                ancient-woodland:1109927            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                PEAKS WOOD            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -206,35 +209,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L42264">89632d544d34...</a></td>
-            <td>42263</td>
-                <td>PEAKS WOOD</td> 
-                <td>ancient-woodland:1109927</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.414462 51.283713,-2.414291 51.283183,-2.414260 51.282918,-2.414610 51.282953,-2.414780 51.282829,-2.414803 51.282737,-2.414848 51.282714,-2.414926 51.282758,-2.414966 51.282734,-2.414916 51.282699,-2.414951 51.282657,-2.415687 51.282882,-2.415831 51.282740,-2.416410 51.283022,-2.416744 51.282701,-2.416992 51.282417,-2.417008 51.282341,-2.417066 51.282288,-2.418143 51.281823,-2.418440 51.281650,-2.418759 51.281750,-2.419193 51.281955,-2.420186 51.282580,-2.420066 51.282652,-2.419816 51.282890,-2.419713 51.283138,-2.419610 51.283284,-2.419548 51.283439,-2.419486 51.283499,-2.419020 51.283740,-2.418800 51.283770,-2.418594 51.283672,-2.418140 51.283926,-2.418404 51.284236,-2.418561 51.284659,-2.418930 51.285029,-2.419186 51.285225,-2.419047 51.285348,-2.417715 51.286027,-2.416381 51.286349,-2.416343 51.286052,-2.416187 51.285666,-2.416198 51.285445,-2.416128 51.285322,-2.415482 51.284935,-2.414992 51.284567,-2.414684 51.284187,-2.414462 51.283713)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L42263">89632d544d34...</a></td>
             <td>42262</td>
-                <td>PEAKS WOOD</td> 
                 <td>ancient-woodland:1109927</td> 
+                <td>PEAKS WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -244,6 +229,24 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-2.413398 51.282790,-2.413306 51.282784,-2.414151 51.282275,-2.414254 51.282918,-2.413398 51.282790)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L42264">89632d544d34...</a></td>
+            <td>42263</td>
+                <td>ancient-woodland:1109927</td> 
+                <td>PEAKS WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.414462 51.283713,-2.414291 51.283183,-2.414260 51.282918,-2.414610 51.282953,-2.414780 51.282829,-2.414803 51.282737,-2.414848 51.282714,-2.414926 51.282758,-2.414966 51.282734,-2.414916 51.282699,-2.414951 51.282657,-2.415687 51.282882,-2.415831 51.282740,-2.416410 51.283022,-2.416744 51.282701,-2.416992 51.282417,-2.417008 51.282341,-2.417066 51.282288,-2.418143 51.281823,-2.418440 51.281650,-2.418759 51.281750,-2.419193 51.281955,-2.420186 51.282580,-2.420066 51.282652,-2.419816 51.282890,-2.419713 51.283138,-2.419610 51.283284,-2.419548 51.283439,-2.419486 51.283499,-2.419020 51.283740,-2.418800 51.283770,-2.418594 51.283672,-2.418140 51.283926,-2.418404 51.284236,-2.418561 51.284659,-2.418930 51.285029,-2.419186 51.285225,-2.419047 51.285348,-2.417715 51.286027,-2.416381 51.286349,-2.416343 51.286052,-2.416187 51.285666,-2.416198 51.285445,-2.416128 51.285322,-2.415482 51.284935,-2.414992 51.284567,-2.414684 51.284187,-2.414462 51.283713)))
   </div>
 </details>
                 </td>

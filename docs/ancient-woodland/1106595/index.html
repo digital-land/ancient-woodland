@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -213,24 +216,6 @@ crossorigin="" />
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L52271">89632d544d34...</a></td>
-            <td>52270</td>
-                <td>RYTON COPPICE</td> 
-                <td>ancient-woodland:1106595</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.390347 51.984298,-2.390101 51.983952,-2.390438 51.983931,-2.390546 51.983823,-2.390621 51.983675,-2.390683 51.983433,-2.391361 51.983587,-2.391285 51.983696,-2.391277 51.984015,-2.391191 51.984136,-2.390970 51.984273,-2.390721 51.984324,-2.390478 51.984335,-2.390347 51.984298)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L52395">89632d544d34...</a></td>
             <td>52394</td>
                 <td>RYTON COPPICE</td> 
@@ -267,24 +252,6 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L52269">89632d544d34...</a></td>
-            <td>52268</td>
-                <td>RYTON COPPICE</td> 
-                <td>ancient-woodland:1106595</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.392468 51.983598,-2.392857 51.983069,-2.393089 51.983058,-2.393183 51.983083,-2.393119 51.983092,-2.392638 51.983675,-2.392468 51.983598)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L52473">89632d544d34...</a></td>
             <td>52472</td>
                 <td>RYTON COPPICE</td> 
@@ -298,6 +265,42 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-2.390403 51.984779,-2.390347 51.984298,-2.390478 51.984335,-2.390721 51.984324,-2.390970 51.984273,-2.391191 51.984136,-2.391277 51.984015,-2.391285 51.983696,-2.391361 51.983587,-2.391461 51.983585,-2.391991 51.983239,-2.392090 51.983207,-2.392438 51.982885,-2.393089 51.983058,-2.392857 51.983069,-2.392468 51.983598,-2.392638 51.983675,-2.392211 51.984147,-2.392198 51.984261,-2.391987 51.984891,-2.391646 51.984891,-2.390403 51.984779)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L52271">89632d544d34...</a></td>
+            <td>52270</td>
+                <td>RYTON COPPICE</td> 
+                <td>ancient-woodland:1106595</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.390347 51.984298,-2.390101 51.983952,-2.390438 51.983931,-2.390546 51.983823,-2.390621 51.983675,-2.390683 51.983433,-2.391361 51.983587,-2.391285 51.983696,-2.391277 51.984015,-2.391191 51.984136,-2.390970 51.984273,-2.390721 51.984324,-2.390478 51.984335,-2.390347 51.984298)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L52269">89632d544d34...</a></td>
+            <td>52268</td>
+                <td>RYTON COPPICE</td> 
+                <td>ancient-woodland:1106595</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.392468 51.983598,-2.392857 51.983069,-2.393089 51.983058,-2.393183 51.983083,-2.393119 51.983092,-2.392638 51.983675,-2.392468 51.983598)))
   </div>
 </details>
                 </td>

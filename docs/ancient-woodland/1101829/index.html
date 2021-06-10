@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,13 +157,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1101829</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                ancient-woodland:1101829            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                GIBSON PARK WOOD            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                ancient-woodland:1101829            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -213,24 +216,6 @@ crossorigin="" />
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L30780">89632d544d34...</a></td>
-            <td>30779</td>
-                <td>GIBSON PARK WOOD</td> 
-                <td>ancient-woodland:1101829</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-3.259203 54.264480,-3.259383 54.264542,-3.259487 54.264635,-3.259213 54.264976,-3.259115 54.265219,-3.259632 54.265333,-3.259291 54.266028,-3.258293 54.265942,-3.258271 54.266193,-3.258073 54.266364,-3.258053 54.266544,-3.257882 54.266847,-3.257882 54.266953,-3.257759 54.267250,-3.257769 54.267413,-3.257700 54.267625,-3.257499 54.267767,-3.257155 54.267934,-3.257113 54.267913,-3.257220 54.267742,-3.257320 54.267451,-3.257284 54.267109,-3.257338 54.266872,-3.257425 54.266706,-3.257498 54.266277,-3.257686 54.266019,-3.257832 54.265698,-3.257859 54.265701,-3.258049 54.265383,-3.258005 54.264888,-3.257875 54.264698,-3.257993 54.264633,-3.258002 54.264573,-3.258780 54.264525,-3.258908 54.264506,-3.259012 54.264445,-3.259203 54.264480)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L30779">89632d544d34...</a></td>
             <td>30778</td>
                 <td>GIBSON PARK WOOD</td> 
@@ -244,6 +229,24 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-3.259203 54.264480,-3.259012 54.264445,-3.258908 54.264506,-3.258780 54.264525,-3.258310 54.264554,-3.258306 54.264528,-3.258361 54.264311,-3.258608 54.264116,-3.258703 54.263964,-3.258815 54.263163,-3.259241 54.263104,-3.259396 54.262811,-3.259386 54.262589,-3.259285 54.262492,-3.259087 54.262188,-3.258894 54.262008,-3.259873 54.261910,-3.260279 54.261912,-3.260210 54.262627,-3.260058 54.262670,-3.259958 54.263078,-3.259962 54.263199,-3.260058 54.263486,-3.260158 54.263607,-3.260107 54.263667,-3.260104 54.263731,-3.259785 54.263739,-3.259119 54.264448,-3.259203 54.264480)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L30780">89632d544d34...</a></td>
+            <td>30779</td>
+                <td>GIBSON PARK WOOD</td> 
+                <td>ancient-woodland:1101829</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-3.259203 54.264480,-3.259383 54.264542,-3.259487 54.264635,-3.259213 54.264976,-3.259115 54.265219,-3.259632 54.265333,-3.259291 54.266028,-3.258293 54.265942,-3.258271 54.266193,-3.258073 54.266364,-3.258053 54.266544,-3.257882 54.266847,-3.257882 54.266953,-3.257759 54.267250,-3.257769 54.267413,-3.257700 54.267625,-3.257499 54.267767,-3.257155 54.267934,-3.257113 54.267913,-3.257220 54.267742,-3.257320 54.267451,-3.257284 54.267109,-3.257338 54.266872,-3.257425 54.266706,-3.257498 54.266277,-3.257686 54.266019,-3.257832 54.265698,-3.257859 54.265701,-3.258049 54.265383,-3.258005 54.264888,-3.257875 54.264698,-3.257993 54.264633,-3.258002 54.264573,-3.258780 54.264525,-3.258908 54.264506,-3.259012 54.264445,-3.259203 54.264480)))
   </div>
 </details>
                 </td>

@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -213,24 +216,6 @@ crossorigin="" />
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L47900">89632d544d34...</a></td>
-            <td>47899</td>
-                <td>SWAINE WOOD</td> 
-                <td>ancient-woodland:1103322</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.656506 53.829770,-1.656298 53.829666,-1.656078 53.829633,-1.655223 53.829659,-1.654978 53.829636,-1.654955 53.829548,-1.654797 53.829516,-1.654073 53.829558,-1.653782 53.829507,-1.653710 53.829452,-1.653276 53.829373,-1.653133 53.829369,-1.652912 53.829418,-1.652806 53.829240,-1.652339 53.828956,-1.651834 53.828582,-1.651626 53.828380,-1.651499 53.828177,-1.651645 53.828204,-1.652349 53.828146,-1.652672 53.828179,-1.654592 53.828717,-1.656699 53.829164,-1.658282 53.829786,-1.658095 53.829773,-1.658130 53.829969,-1.658076 53.830093,-1.657912 53.830277,-1.657709 53.830355,-1.657056 53.830001,-1.656506 53.829770)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L47901">89632d544d34...</a></td>
             <td>47900</td>
                 <td>SWAINE WOOD</td> 
@@ -244,6 +229,24 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-1.658592 53.830125,-1.658755 53.830016,-1.658995 53.830143,-1.658968 53.830162,-1.659275 53.830303,-1.659323 53.830384,-1.659276 53.830533,-1.659301 53.830659,-1.659424 53.830848,-1.659516 53.831132,-1.659568 53.831203,-1.659351 53.831449,-1.659206 53.831557,-1.658940 53.831373,-1.658934 53.831267,-1.658997 53.831067,-1.658940 53.830984,-1.657890 53.830812,-1.658365 53.830450,-1.658197 53.830413,-1.658195 53.830391,-1.658592 53.830125)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L47900">89632d544d34...</a></td>
+            <td>47899</td>
+                <td>SWAINE WOOD</td> 
+                <td>ancient-woodland:1103322</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.656506 53.829770,-1.656298 53.829666,-1.656078 53.829633,-1.655223 53.829659,-1.654978 53.829636,-1.654955 53.829548,-1.654797 53.829516,-1.654073 53.829558,-1.653782 53.829507,-1.653710 53.829452,-1.653276 53.829373,-1.653133 53.829369,-1.652912 53.829418,-1.652806 53.829240,-1.652339 53.828956,-1.651834 53.828582,-1.651626 53.828380,-1.651499 53.828177,-1.651645 53.828204,-1.652349 53.828146,-1.652672 53.828179,-1.654592 53.828717,-1.656699 53.829164,-1.658282 53.829786,-1.658095 53.829773,-1.658130 53.829969,-1.658076 53.830093,-1.657912 53.830277,-1.657709 53.830355,-1.657056 53.830001,-1.656506 53.829770)))
   </div>
 </details>
                 </td>

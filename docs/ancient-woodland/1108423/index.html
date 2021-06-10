@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -206,35 +209,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L29752">89632d544d34...</a></td>
-            <td>29751</td>
-                <td>FERMYN WOODS</td> 
-                <td>ancient-woodland:1108423</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.584281 52.453092,-0.584668 52.452976,-0.585303 52.454647,-0.585966 52.456052,-0.586887 52.457892,-0.587429 52.459695,-0.587536 52.459763,-0.587147 52.459789,-0.587366 52.460284,-0.585269 52.460833,-0.583884 52.461549,-0.582616 52.462032,-0.582525 52.461499,-0.582536 52.461133,-0.582652 52.460935,-0.582821 52.460738,-0.583097 52.460641,-0.582792 52.459939,-0.582808 52.459440,-0.582712 52.459040,-0.582787 52.458409,-0.582912 52.457911,-0.582814 52.457578,-0.582283 52.457139,-0.582187 52.456739,-0.582204 52.456207,-0.582009 52.455506,-0.581706 52.454770,-0.580833 52.454252,-0.582046 52.453794,-0.583647 52.453267,-0.584281 52.453092)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L52298">89632d544d34...</a></td>
             <td>52297</td>
-                <td>FERMYN WOODS</td> 
                 <td>ancient-woodland:1108423</td> 
+                <td>FERMYN WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -251,8 +236,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L29750">89632d544d34...</a></td>
             <td>29749</td>
-                <td>FERMYN WOODS</td> 
                 <td>ancient-woodland:1108423</td> 
+                <td>FERMYN WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -269,8 +254,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L29749">89632d544d34...</a></td>
             <td>29748</td>
-                <td>FERMYN WOODS</td> 
                 <td>ancient-woodland:1108423</td> 
+                <td>FERMYN WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -285,46 +270,10 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L29753">89632d544d34...</a></td>
-            <td>29752</td>
-                <td>FERMYN WOODS</td> 
-                <td>ancient-woodland:1108423</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.588372 52.461427,-0.588177 52.461116,-0.587889 52.461027,-0.587726 52.460888,-0.587639 52.460692,-0.587663 52.460555,-0.588061 52.460429,-0.589366 52.460280,-0.590546 52.460222,-0.591696 52.460086,-0.591717 52.460263,-0.591815 52.460419,-0.592226 52.460727,-0.592831 52.461077,-0.592977 52.461211,-0.593037 52.461355,-0.593315 52.461660,-0.593094 52.461603,-0.592362 52.461291,-0.592082 52.461349,-0.591759 52.461539,-0.591559 52.461561,-0.591184 52.461495,-0.590920 52.461698,-0.590057 52.461385,-0.589995 52.461457,-0.589991 52.461590,-0.590102 52.461834,-0.590130 52.462198,-0.590068 52.462282,-0.589906 52.462377,-0.589467 52.462457,-0.589284 52.462600,-0.589260 52.462709,-0.589068 52.462840,-0.588372 52.461427)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L29751">89632d544d34...</a></td>
-            <td>29750</td>
-                <td>FERMYN WOODS</td> 
-                <td>ancient-woodland:1108423</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.590658 52.465970,-0.590739 52.466065,-0.591624 52.465896,-0.593212 52.465731,-0.593691 52.465613,-0.592908 52.467823,-0.592031 52.467106,-0.591434 52.466663,-0.590625 52.465974,-0.590658 52.465970)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L29748">89632d544d34...</a></td>
             <td>29747</td>
-                <td>FERMYN WOODS</td> 
                 <td>ancient-woodland:1108423</td> 
+                <td>FERMYN WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -339,28 +288,10 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L29747">89632d544d34...</a></td>
-            <td>29746</td>
-                <td>FERMYN WOODS</td> 
-                <td>ancient-woodland:1108423</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.584765 52.452947,-0.585612 52.452662,-0.585859 52.452618,-0.586412 52.452616,-0.586894 52.452508,-0.587274 52.452353,-0.587614 52.452254,-0.587913 52.452246,-0.588262 52.452182,-0.588881 52.451887,-0.589637 52.451668,-0.589595 52.452067,-0.589671 52.452314,-0.589979 52.452815,-0.590471 52.453010,-0.591305 52.452779,-0.592402 52.452657,-0.593007 52.452459,-0.593095 52.452654,-0.593560 52.453278,-0.593646 52.453485,-0.593657 52.453719,-0.593354 52.454618,-0.593225 52.455126,-0.593130 52.455690,-0.592592 52.456347,-0.591714 52.456921,-0.591421 52.457201,-0.591117 52.457592,-0.590956 52.457916,-0.590912 52.458104,-0.590920 52.458430,-0.590979 52.458624,-0.591147 52.458884,-0.591347 52.459055,-0.590461 52.459516,-0.587536 52.459763,-0.587429 52.459695,-0.586887 52.457892,-0.585966 52.456052,-0.585303 52.454647,-0.584668 52.452976,-0.584765 52.452947)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L52416">89632d544d34...</a></td>
             <td>52415</td>
-                <td>FERMYN WOODS</td> 
                 <td>ancient-woodland:1108423</td> 
+                <td>FERMYN WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -375,10 +306,46 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L29753">89632d544d34...</a></td>
+            <td>29752</td>
+                <td>ancient-woodland:1108423</td> 
+                <td>FERMYN WOODS</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.588372 52.461427,-0.588177 52.461116,-0.587889 52.461027,-0.587726 52.460888,-0.587639 52.460692,-0.587663 52.460555,-0.588061 52.460429,-0.589366 52.460280,-0.590546 52.460222,-0.591696 52.460086,-0.591717 52.460263,-0.591815 52.460419,-0.592226 52.460727,-0.592831 52.461077,-0.592977 52.461211,-0.593037 52.461355,-0.593315 52.461660,-0.593094 52.461603,-0.592362 52.461291,-0.592082 52.461349,-0.591759 52.461539,-0.591559 52.461561,-0.591184 52.461495,-0.590920 52.461698,-0.590057 52.461385,-0.589995 52.461457,-0.589991 52.461590,-0.590102 52.461834,-0.590130 52.462198,-0.590068 52.462282,-0.589906 52.462377,-0.589467 52.462457,-0.589284 52.462600,-0.589260 52.462709,-0.589068 52.462840,-0.588372 52.461427)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L29747">89632d544d34...</a></td>
+            <td>29746</td>
+                <td>ancient-woodland:1108423</td> 
+                <td>FERMYN WOODS</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.584765 52.452947,-0.585612 52.452662,-0.585859 52.452618,-0.586412 52.452616,-0.586894 52.452508,-0.587274 52.452353,-0.587614 52.452254,-0.587913 52.452246,-0.588262 52.452182,-0.588881 52.451887,-0.589637 52.451668,-0.589595 52.452067,-0.589671 52.452314,-0.589979 52.452815,-0.590471 52.453010,-0.591305 52.452779,-0.592402 52.452657,-0.593007 52.452459,-0.593095 52.452654,-0.593560 52.453278,-0.593646 52.453485,-0.593657 52.453719,-0.593354 52.454618,-0.593225 52.455126,-0.593130 52.455690,-0.592592 52.456347,-0.591714 52.456921,-0.591421 52.457201,-0.591117 52.457592,-0.590956 52.457916,-0.590912 52.458104,-0.590920 52.458430,-0.590979 52.458624,-0.591147 52.458884,-0.591347 52.459055,-0.590461 52.459516,-0.587536 52.459763,-0.587429 52.459695,-0.586887 52.457892,-0.585966 52.456052,-0.585303 52.454647,-0.584668 52.452976,-0.584765 52.452947)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L29754">89632d544d34...</a></td>
             <td>29753</td>
-                <td>FERMYN WOODS</td> 
                 <td>ancient-woodland:1108423</td> 
+                <td>FERMYN WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -393,10 +360,28 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L29751">89632d544d34...</a></td>
+            <td>29750</td>
+                <td>ancient-woodland:1108423</td> 
+                <td>FERMYN WOODS</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.590658 52.465970,-0.590739 52.466065,-0.591624 52.465896,-0.593212 52.465731,-0.593691 52.465613,-0.592908 52.467823,-0.592031 52.467106,-0.591434 52.466663,-0.590625 52.465974,-0.590658 52.465970)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L29755">89632d544d34...</a></td>
             <td>29754</td>
-                <td>FERMYN WOODS</td> 
                 <td>ancient-woodland:1108423</td> 
+                <td>FERMYN WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -406,6 +391,24 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-0.590385 52.466003,-0.590625 52.465974,-0.591434 52.466663,-0.592031 52.467106,-0.592908 52.467823,-0.592117 52.470037,-0.591931 52.470286,-0.591671 52.470489,-0.591578 52.470507,-0.591112 52.470302,-0.590346 52.469890,-0.589615 52.468913,-0.589515 52.468842,-0.589335 52.468780,-0.588434 52.468634,-0.588132 52.468371,-0.587740 52.468140,-0.587353 52.467742,-0.587075 52.467319,-0.586824 52.467019,-0.586779 52.466896,-0.587224 52.466661,-0.587548 52.466556,-0.588622 52.466364,-0.589896 52.466202,-0.589925 52.466171,-0.589858 52.466138,-0.590385 52.466003)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L29752">89632d544d34...</a></td>
+            <td>29751</td>
+                <td>ancient-woodland:1108423</td> 
+                <td>FERMYN WOODS</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.584281 52.453092,-0.584668 52.452976,-0.585303 52.454647,-0.585966 52.456052,-0.586887 52.457892,-0.587429 52.459695,-0.587536 52.459763,-0.587147 52.459789,-0.587366 52.460284,-0.585269 52.460833,-0.583884 52.461549,-0.582616 52.462032,-0.582525 52.461499,-0.582536 52.461133,-0.582652 52.460935,-0.582821 52.460738,-0.583097 52.460641,-0.582792 52.459939,-0.582808 52.459440,-0.582712 52.459040,-0.582787 52.458409,-0.582912 52.457911,-0.582814 52.457578,-0.582283 52.457139,-0.582187 52.456739,-0.582204 52.456207,-0.582009 52.455506,-0.581706 52.454770,-0.580833 52.454252,-0.582046 52.453794,-0.583647 52.453267,-0.584281 52.453092)))
   </div>
 </details>
                 </td>

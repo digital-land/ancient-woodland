@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -206,53 +209,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L49567">89632d544d34...</a></td>
-            <td>49566</td>
-                <td>UPPER THICKET COPSE</td> 
-                <td>ancient-woodland:1110925</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.686783 51.430653,-1.684922 51.430688,-1.684815 51.430651,-1.684313 51.430701,-1.682657 51.430745,-1.682301 51.430718,-1.682053 51.430542,-1.683682 51.429013,-1.684128 51.428819,-1.684571 51.428718,-1.684609 51.428666,-1.685350 51.428529,-1.686506 51.428885,-1.686689 51.429029,-1.686871 51.429447,-1.686976 51.430025,-1.687233 51.430514,-1.687204 51.430847,-1.686969 51.430804,-1.686869 51.430693,-1.686783 51.430653)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L49570">89632d544d34...</a></td>
-            <td>49569</td>
-                <td>UPPER THICKET COPSE</td> 
-                <td>ancient-woodland:1110925</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.687204 51.430847,-1.687160 51.430965,-1.686913 51.431314,-1.686831 51.431515,-1.685173 51.431588,-1.683458 51.431711,-1.682932 51.431688,-1.682455 51.430877,-1.682301 51.430718,-1.682657 51.430745,-1.684313 51.430701,-1.684815 51.430651,-1.684922 51.430688,-1.686697 51.430649,-1.686842 51.430675,-1.686969 51.430804,-1.687204 51.430847)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L49569">89632d544d34...</a></td>
             <td>49568</td>
-                <td>UPPER THICKET COPSE</td> 
                 <td>ancient-woodland:1110925</td> 
+                <td>UPPER THICKET COPSE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -267,10 +234,28 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L49567">89632d544d34...</a></td>
+            <td>49566</td>
+                <td>ancient-woodland:1110925</td> 
+                <td>UPPER THICKET COPSE</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.686783 51.430653,-1.684922 51.430688,-1.684815 51.430651,-1.684313 51.430701,-1.682657 51.430745,-1.682301 51.430718,-1.682053 51.430542,-1.683682 51.429013,-1.684128 51.428819,-1.684571 51.428718,-1.684609 51.428666,-1.685350 51.428529,-1.686506 51.428885,-1.686689 51.429029,-1.686871 51.429447,-1.686976 51.430025,-1.687233 51.430514,-1.687204 51.430847,-1.686969 51.430804,-1.686869 51.430693,-1.686783 51.430653)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L49568">89632d544d34...</a></td>
             <td>49567</td>
-                <td>UPPER THICKET COPSE</td> 
                 <td>ancient-woodland:1110925</td> 
+                <td>UPPER THICKET COPSE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -280,6 +265,24 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-1.684899 51.433604,-1.684655 51.433477,-1.684145 51.433134,-1.683446 51.432325,-1.683106 51.432048,-1.682932 51.431688,-1.683458 51.431711,-1.685173 51.431588,-1.686831 51.431515,-1.686363 51.432334,-1.685882 51.432897,-1.685658 51.433239,-1.685452 51.433445,-1.684899 51.433604)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L49570">89632d544d34...</a></td>
+            <td>49569</td>
+                <td>ancient-woodland:1110925</td> 
+                <td>UPPER THICKET COPSE</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.687204 51.430847,-1.687160 51.430965,-1.686913 51.431314,-1.686831 51.431515,-1.685173 51.431588,-1.683458 51.431711,-1.682932 51.431688,-1.682455 51.430877,-1.682301 51.430718,-1.682657 51.430745,-1.684313 51.430701,-1.684815 51.430651,-1.684922 51.430688,-1.686697 51.430649,-1.686842 51.430675,-1.686969 51.430804,-1.687204 51.430847)))
   </div>
 </details>
                 </td>

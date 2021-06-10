@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,13 +157,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1103855</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                ancient-woodland:1103855            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                BUTTERCRAMBE WOOD EAST            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                ancient-woodland:1103855            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -213,6 +216,42 @@ crossorigin="" />
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L24804">89632d544d34...</a></td>
+            <td>24803</td>
+                <td>BUTTERCRAMBE WOOD EAST</td> 
+                <td>ancient-woodland:1103855</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.896863 54.030172,-0.897000 54.030117,-0.897175 54.030316,-0.897273 54.030503,-0.897284 54.031118,-0.897319 54.031470,-0.897364 54.031593,-0.897243 54.031641,-0.897194 54.031695,-0.896998 54.031764,-0.896850 54.031884,-0.896488 54.031991,-0.896176 54.032030,-0.895806 54.032161,-0.895569 54.032289,-0.894637 54.032933,-0.894528 54.032974,-0.894329 54.032227,-0.894239 54.031582,-0.894044 54.030965,-0.893943 54.030848,-0.893965 54.030464,-0.893929 54.030422,-0.896036 54.030371,-0.896863 54.030172)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L24803">89632d544d34...</a></td>
+            <td>24802</td>
+                <td>BUTTERCRAMBE WOOD EAST</td> 
+                <td>ancient-woodland:1103855</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.889504 54.029088,-0.889559 54.028936,-0.889604 54.028946,-0.889630 54.028871,-0.890297 54.028882,-0.890148 54.031486,-0.888985 54.031511,-0.889011 54.031376,-0.888953 54.031227,-0.888996 54.030869,-0.889274 54.030044,-0.889450 54.029392,-0.889415 54.029348,-0.889504 54.029088)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L24805">89632d544d34...</a></td>
             <td>24804</td>
                 <td>BUTTERCRAMBE WOOD EAST</td> 
@@ -244,42 +283,6 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-0.889009 54.028881,-0.889213 54.028861,-0.889559 54.028936,-0.889415 54.029348,-0.889450 54.029392,-0.889274 54.030044,-0.888996 54.030869,-0.888953 54.031227,-0.889011 54.031376,-0.888985 54.031511,-0.888400 54.031512,-0.889002 54.029006,-0.889009 54.028881)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L24803">89632d544d34...</a></td>
-            <td>24802</td>
-                <td>BUTTERCRAMBE WOOD EAST</td> 
-                <td>ancient-woodland:1103855</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.889504 54.029088,-0.889559 54.028936,-0.889604 54.028946,-0.889630 54.028871,-0.890297 54.028882,-0.890148 54.031486,-0.888985 54.031511,-0.889011 54.031376,-0.888953 54.031227,-0.888996 54.030869,-0.889274 54.030044,-0.889450 54.029392,-0.889415 54.029348,-0.889504 54.029088)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L24804">89632d544d34...</a></td>
-            <td>24803</td>
-                <td>BUTTERCRAMBE WOOD EAST</td> 
-                <td>ancient-woodland:1103855</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.896863 54.030172,-0.897000 54.030117,-0.897175 54.030316,-0.897273 54.030503,-0.897284 54.031118,-0.897319 54.031470,-0.897364 54.031593,-0.897243 54.031641,-0.897194 54.031695,-0.896998 54.031764,-0.896850 54.031884,-0.896488 54.031991,-0.896176 54.032030,-0.895806 54.032161,-0.895569 54.032289,-0.894637 54.032933,-0.894528 54.032974,-0.894329 54.032227,-0.894239 54.031582,-0.894044 54.030965,-0.893943 54.030848,-0.893965 54.030464,-0.893929 54.030422,-0.896036 54.030371,-0.896863 54.030172)))
   </div>
 </details>
                 </td>

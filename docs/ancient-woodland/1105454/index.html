@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -206,35 +209,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L26164">89632d544d34...</a></td>
-            <td>26163</td>
-                <td>CLIPSHAM PARK WOOD</td> 
-                <td>ancient-woodland:1105454</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.551073 52.738112,-0.551298 52.738011,-0.551292 52.738182,-0.551067 52.738800,-0.550227 52.739439,-0.549917 52.739890,-0.549746 52.740247,-0.549534 52.740479,-0.549261 52.740366,-0.549473 52.740176,-0.549662 52.739745,-0.549971 52.739191,-0.550571 52.738497,-0.551073 52.738112)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L26165">89632d544d34...</a></td>
             <td>26164</td>
-                <td>CLIPSHAM PARK WOOD</td> 
                 <td>ancient-woodland:1105454</td> 
+                <td>CLIPSHAM PARK WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -249,28 +234,10 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L26163">89632d544d34...</a></td>
-            <td>26162</td>
-                <td>CLIPSHAM PARK WOOD</td> 
-                <td>ancient-woodland:1105454</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.553891 52.739894,-0.556710 52.739109,-0.556906 52.739147,-0.556223 52.739650,-0.556267 52.739706,-0.557251 52.740187,-0.556535 52.740523,-0.553735 52.739937,-0.553891 52.739894)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L26166">89632d544d34...</a></td>
             <td>26165</td>
-                <td>CLIPSHAM PARK WOOD</td> 
                 <td>ancient-woodland:1105454</td> 
+                <td>CLIPSHAM PARK WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -287,8 +254,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L26162">89632d544d34...</a></td>
             <td>26161</td>
-                <td>CLIPSHAM PARK WOOD</td> 
                 <td>ancient-woodland:1105454</td> 
+                <td>CLIPSHAM PARK WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -298,6 +265,42 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-0.557219 52.738971,-0.557245 52.738918,-0.557511 52.738946,-0.558193 52.739143,-0.559013 52.739180,-0.559541 52.739348,-0.561445 52.739574,-0.563079 52.739877,-0.564009 52.739957,-0.564761 52.740086,-0.566113 52.740254,-0.565695 52.740393,-0.564008 52.740214,-0.560986 52.739703,-0.558522 52.739384,-0.557142 52.739130,-0.557219 52.738971)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L26163">89632d544d34...</a></td>
+            <td>26162</td>
+                <td>ancient-woodland:1105454</td> 
+                <td>CLIPSHAM PARK WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.553891 52.739894,-0.556710 52.739109,-0.556906 52.739147,-0.556223 52.739650,-0.556267 52.739706,-0.557251 52.740187,-0.556535 52.740523,-0.553735 52.739937,-0.553891 52.739894)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L26164">89632d544d34...</a></td>
+            <td>26163</td>
+                <td>ancient-woodland:1105454</td> 
+                <td>CLIPSHAM PARK WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.551073 52.738112,-0.551298 52.738011,-0.551292 52.738182,-0.551067 52.738800,-0.550227 52.739439,-0.549917 52.739890,-0.549746 52.740247,-0.549534 52.740479,-0.549261 52.740366,-0.549473 52.740176,-0.549662 52.739745,-0.549971 52.739191,-0.550571 52.738497,-0.551073 52.738112)))
   </div>
 </details>
                 </td>

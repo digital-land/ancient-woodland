@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -206,17 +209,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21564">89632d544d34...</a></td>
-            <td>21563</td>
-                <td>BATH WOOD AND PADDOCK ROUGH</td> 
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21563">89632d544d34...</a></td>
+            <td>21562</td>
                 <td>ancient-woodland:1104590</td> 
+                <td>BATH WOOD AND PADDOCK ROUGH</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -225,7 +228,7 @@ crossorigin="" />
     </span>
   </summary>
   <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.831856 52.806926,-1.833440 52.806429,-1.833448 52.806427,-1.833198 52.806788,-1.832970 52.806901,-1.832645 52.806962,-1.832059 52.806881,-1.831916 52.807144,-1.831716 52.807381,-1.831729 52.807678,-1.831283 52.807724,-1.830357 52.807523,-1.830416 52.807376,-1.831856 52.806926)))
+    MULTIPOLYGON (((-1.833304 52.804834,-1.833394 52.804499,-1.833243 52.804507,-1.833109 52.804688,-1.832395 52.804608,-1.832931 52.803803,-1.832932 52.803690,-1.833018 52.803540,-1.833362 52.803307,-1.833545 52.803241,-1.834077 52.803281,-1.834198 52.803167,-1.834510 52.803359,-1.834598 52.803517,-1.834669 52.803568,-1.834586 52.803588,-1.834568 52.803626,-1.834688 52.803838,-1.834624 52.803882,-1.834474 52.803897,-1.834202 52.804027,-1.834147 52.804083,-1.834086 52.804397,-1.834117 52.804461,-1.834209 52.804524,-1.834200 52.804640,-1.834278 52.804653,-1.833847 52.804930,-1.833614 52.805730,-1.832814 52.805534,-1.833084 52.805207,-1.833304 52.804834)))
   </div>
 </details>
                 </td>
@@ -233,8 +236,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21565">89632d544d34...</a></td>
             <td>21564</td>
-                <td>BATH WOOD AND PADDOCK ROUGH</td> 
                 <td>ancient-woodland:1104590</td> 
+                <td>BATH WOOD AND PADDOCK ROUGH</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -249,10 +252,10 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21563">89632d544d34...</a></td>
-            <td>21562</td>
-                <td>BATH WOOD AND PADDOCK ROUGH</td> 
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21564">89632d544d34...</a></td>
+            <td>21563</td>
                 <td>ancient-woodland:1104590</td> 
+                <td>BATH WOOD AND PADDOCK ROUGH</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -261,7 +264,7 @@ crossorigin="" />
     </span>
   </summary>
   <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.833304 52.804834,-1.833394 52.804499,-1.833243 52.804507,-1.833109 52.804688,-1.832395 52.804608,-1.832931 52.803803,-1.832932 52.803690,-1.833018 52.803540,-1.833362 52.803307,-1.833545 52.803241,-1.834077 52.803281,-1.834198 52.803167,-1.834510 52.803359,-1.834598 52.803517,-1.834669 52.803568,-1.834586 52.803588,-1.834568 52.803626,-1.834688 52.803838,-1.834624 52.803882,-1.834474 52.803897,-1.834202 52.804027,-1.834147 52.804083,-1.834086 52.804397,-1.834117 52.804461,-1.834209 52.804524,-1.834200 52.804640,-1.834278 52.804653,-1.833847 52.804930,-1.833614 52.805730,-1.832814 52.805534,-1.833084 52.805207,-1.833304 52.804834)))
+    MULTIPOLYGON (((-1.831856 52.806926,-1.833440 52.806429,-1.833448 52.806427,-1.833198 52.806788,-1.832970 52.806901,-1.832645 52.806962,-1.832059 52.806881,-1.831916 52.807144,-1.831716 52.807381,-1.831729 52.807678,-1.831283 52.807724,-1.830357 52.807523,-1.830416 52.807376,-1.831856 52.806926)))
   </div>
 </details>
                 </td>

@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -206,53 +209,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21292">89632d544d34...</a></td>
-            <td>21291</td>
-                <td>BANGHAMS WOOD</td> 
-                <td>ancient-woodland:1120872</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.514475 52.625825,-2.514058 52.625202,-2.514307 52.625193,-2.515163 52.625358,-2.515468 52.625447,-2.515521 52.625518,-2.515790 52.625570,-2.516362 52.625573,-2.516646 52.625684,-2.517155 52.625781,-2.517352 52.626559,-2.517313 52.626816,-2.517175 52.627006,-2.516873 52.627170,-2.515884 52.627326,-2.515778 52.627048,-2.515671 52.626868,-2.515489 52.626702,-2.515197 52.626355,-2.514475 52.625825)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21294">89632d544d34...</a></td>
-            <td>21293</td>
-                <td>BANGHAMS WOOD</td> 
-                <td>ancient-woodland:1120872</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.513416 52.627419,-2.513573 52.627228,-2.513711 52.626912,-2.513908 52.626587,-2.513971 52.626232,-2.514032 52.626149,-2.514159 52.626263,-2.514610 52.626862,-2.514663 52.627022,-2.514722 52.627085,-2.515247 52.627320,-2.515636 52.627410,-2.515251 52.627407,-2.514907 52.627692,-2.514892 52.628178,-2.513968 52.628552,-2.513692 52.628614,-2.512721 52.628690,-2.512615 52.628651,-2.512709 52.628601,-2.512749 52.628535,-2.512926 52.628478,-2.513128 52.628303,-2.513158 52.628076,-2.513264 52.627913,-2.513332 52.627565,-2.513416 52.627419)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21293">89632d544d34...</a></td>
             <td>21292</td>
-                <td>BANGHAMS WOOD</td> 
                 <td>ancient-woodland:1120872</td> 
+                <td>BANGHAMS WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -267,10 +234,28 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21292">89632d544d34...</a></td>
+            <td>21291</td>
+                <td>ancient-woodland:1120872</td> 
+                <td>BANGHAMS WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.514475 52.625825,-2.514058 52.625202,-2.514307 52.625193,-2.515163 52.625358,-2.515468 52.625447,-2.515521 52.625518,-2.515790 52.625570,-2.516362 52.625573,-2.516646 52.625684,-2.517155 52.625781,-2.517352 52.626559,-2.517313 52.626816,-2.517175 52.627006,-2.516873 52.627170,-2.515884 52.627326,-2.515778 52.627048,-2.515671 52.626868,-2.515489 52.626702,-2.515197 52.626355,-2.514475 52.625825)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21297">89632d544d34...</a></td>
             <td>21296</td>
-                <td>BANGHAMS WOOD</td> 
                 <td>ancient-woodland:1120872</td> 
+                <td>BANGHAMS WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -285,10 +270,28 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21294">89632d544d34...</a></td>
+            <td>21293</td>
+                <td>ancient-woodland:1120872</td> 
+                <td>BANGHAMS WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.513416 52.627419,-2.513573 52.627228,-2.513711 52.626912,-2.513908 52.626587,-2.513971 52.626232,-2.514032 52.626149,-2.514159 52.626263,-2.514610 52.626862,-2.514663 52.627022,-2.514722 52.627085,-2.515247 52.627320,-2.515636 52.627410,-2.515251 52.627407,-2.514907 52.627692,-2.514892 52.628178,-2.513968 52.628552,-2.513692 52.628614,-2.512721 52.628690,-2.512615 52.628651,-2.512709 52.628601,-2.512749 52.628535,-2.512926 52.628478,-2.513128 52.628303,-2.513158 52.628076,-2.513264 52.627913,-2.513332 52.627565,-2.513416 52.627419)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21295">89632d544d34...</a></td>
             <td>21294</td>
-                <td>BANGHAMS WOOD</td> 
                 <td>ancient-woodland:1120872</td> 
+                <td>BANGHAMS WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -305,8 +308,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21296">89632d544d34...</a></td>
             <td>21295</td>
-                <td>BANGHAMS WOOD</td> 
                 <td>ancient-woodland:1120872</td> 
+                <td>BANGHAMS WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">

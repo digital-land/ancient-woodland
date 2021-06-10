@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -206,35 +209,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L32267">89632d544d34...</a></td>
-            <td>32266</td>
-                <td>GUYBONS WOOD</td> 
-                <td>ancient-woodland:1115653</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((0.979602 52.861376,0.979607 52.860940,0.979727 52.860785,0.979821 52.860740,0.980230 52.860731,0.980715 52.860668,0.980829 52.860617,0.980852 52.860148,0.980917 52.859734,0.981009 52.859432,0.981130 52.859251,0.981780 52.858796,0.981960 52.858757,0.982328 52.858606,0.982110 52.858309,0.981928 52.858145,0.981275 52.858341,0.980276 52.858768,0.979772 52.859053,0.979169 52.859447,0.978664 52.860900,0.978138 52.861462,0.979602 52.861376)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L32266">89632d544d34...</a></td>
             <td>32265</td>
-                <td>GUYBONS WOOD</td> 
                 <td>ancient-woodland:1115653</td> 
+                <td>GUYBONS WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -244,6 +229,24 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((0.979602 52.861376,0.979858 52.861363,0.981407 52.861125,0.982454 52.860845,0.983174 52.860817,0.983051 52.860474,0.983307 52.860222,0.983338 52.860088,0.983291 52.859933,0.983468 52.859685,0.983525 52.859550,0.983538 52.859397,0.983465 52.859220,0.983474 52.859022,0.983035 52.858902,0.982708 52.858887,0.982499 52.858771,0.982328 52.858606,0.981705 52.858841,0.981148 52.859234,0.981009 52.859432,0.980917 52.859734,0.980861 52.860063,0.980829 52.860617,0.980715 52.860668,0.980230 52.860731,0.979821 52.860740,0.979727 52.860785,0.979607 52.860940,0.979602 52.861376)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L32267">89632d544d34...</a></td>
+            <td>32266</td>
+                <td>ancient-woodland:1115653</td> 
+                <td>GUYBONS WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((0.979602 52.861376,0.979607 52.860940,0.979727 52.860785,0.979821 52.860740,0.980230 52.860731,0.980715 52.860668,0.980829 52.860617,0.980852 52.860148,0.980917 52.859734,0.981009 52.859432,0.981130 52.859251,0.981780 52.858796,0.981960 52.858757,0.982328 52.858606,0.982110 52.858309,0.981928 52.858145,0.981275 52.858341,0.980276 52.858768,0.979772 52.859053,0.979169 52.859447,0.978664 52.860900,0.978138 52.861462,0.979602 52.861376)))
   </div>
 </details>
                 </td>

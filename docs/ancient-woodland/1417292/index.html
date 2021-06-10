@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -208,23 +211,6 @@ crossorigin="" />
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L14633">89632d544d34...</a></td>
-            <td>14632</td>
-                <td>ancient-woodland:1417292</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-3.333452 54.393723,-3.334578 54.393535,-3.334611 54.393615,-3.333897 54.393736,-3.334724 54.394002,-3.333748 54.393688,-3.333395 54.393767,-3.333126 54.393866,-3.332794 54.394060,-3.332128 54.394558,-3.331825 54.394836,-3.331614 54.394751,-3.331680 54.394612,-3.331747 54.394564,-3.332282 54.394323,-3.333018 54.393876,-3.333452 54.393723)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L4126">89632d544d34...</a></td>
             <td>4125</td>
                 <td>ancient-woodland:1417292</td> 
@@ -237,6 +223,23 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-3.332621 54.395100,-3.332489 54.395063,-3.332352 54.394932,-3.331970 54.394703,-3.332794 54.394060,-3.333126 54.393866,-3.333395 54.393767,-3.333748 54.393688,-3.334724 54.394002,-3.334862 54.393945,-3.335244 54.394118,-3.335010 54.394101,-3.334954 54.394196,-3.334645 54.394199,-3.333822 54.394588,-3.333304 54.394678,-3.333248 54.394662,-3.333184 54.394587,-3.332902 54.394528,-3.332867 54.394587,-3.332954 54.394694,-3.333095 54.394793,-3.333443 54.394897,-3.333598 54.394891,-3.333657 54.395041,-3.333094 54.395109,-3.332782 54.395210,-3.332621 54.395100)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L14633">89632d544d34...</a></td>
+            <td>14632</td>
+                <td>ancient-woodland:1417292</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-3.333452 54.393723,-3.334578 54.393535,-3.334611 54.393615,-3.333897 54.393736,-3.334724 54.394002,-3.333748 54.393688,-3.333395 54.393767,-3.333126 54.393866,-3.332794 54.394060,-3.332128 54.394558,-3.331825 54.394836,-3.331614 54.394751,-3.331680 54.394612,-3.331747 54.394564,-3.332282 54.394323,-3.333018 54.393876,-3.333452 54.393723)))
   </div>
 </details>
                 </td>

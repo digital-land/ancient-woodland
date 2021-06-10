@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -206,71 +209,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28195">89632d544d34...</a></td>
-            <td>28194</td>
-                <td>DEEPDALE COPPICE</td> 
-                <td>ancient-woodland:1121184</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.412714 52.555782,-2.412573 52.555701,-2.412408 52.555718,-2.412633 52.555294,-2.412672 52.555069,-2.412387 52.554450,-2.412450 52.554409,-2.414196 52.555740,-2.414000 52.555792,-2.413525 52.555536,-2.413205 52.555869,-2.413023 52.556204,-2.412956 52.556169,-2.412894 52.555988,-2.412714 52.555782)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28202">89632d544d34...</a></td>
-            <td>28201</td>
-                <td>DEEPDALE COPPICE</td> 
-                <td>ancient-woodland:1121184</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.422074 52.569713,-2.421902 52.569636,-2.421640 52.569684,-2.421357 52.569608,-2.420925 52.569561,-2.420764 52.569447,-2.420732 52.569305,-2.420664 52.569257,-2.420700 52.569223,-2.420698 52.569099,-2.420654 52.568985,-2.421591 52.568985,-2.421713 52.568911,-2.421648 52.569191,-2.422469 52.569489,-2.422256 52.569792,-2.422074 52.569713)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28198">89632d544d34...</a></td>
-            <td>28197</td>
-                <td>DEEPDALE COPPICE</td> 
-                <td>ancient-woodland:1121184</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.415410 52.562855,-2.415303 52.562832,-2.415223 52.562856,-2.414945 52.562742,-2.414952 52.562397,-2.414932 52.562317,-2.414880 52.562272,-2.414434 52.562072,-2.414413 52.562029,-2.413881 52.561835,-2.413882 52.561799,-2.413723 52.561640,-2.413732 52.561356,-2.413841 52.561181,-2.413848 52.561088,-2.414594 52.561004,-2.414638 52.561205,-2.414619 52.561296,-2.414682 52.561450,-2.414642 52.561758,-2.414724 52.562100,-2.414760 52.562170,-2.414844 52.562132,-2.414885 52.562173,-2.415483 52.562871,-2.415410 52.562855)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28197">89632d544d34...</a></td>
             <td>28196</td>
-                <td>DEEPDALE COPPICE</td> 
                 <td>ancient-woodland:1121184</td> 
+                <td>DEEPDALE COPPICE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -287,8 +236,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28196">89632d544d34...</a></td>
             <td>28195</td>
-                <td>DEEPDALE COPPICE</td> 
                 <td>ancient-woodland:1121184</td> 
+                <td>DEEPDALE COPPICE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -303,10 +252,28 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28202">89632d544d34...</a></td>
+            <td>28201</td>
+                <td>ancient-woodland:1121184</td> 
+                <td>DEEPDALE COPPICE</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.422074 52.569713,-2.421902 52.569636,-2.421640 52.569684,-2.421357 52.569608,-2.420925 52.569561,-2.420764 52.569447,-2.420732 52.569305,-2.420664 52.569257,-2.420700 52.569223,-2.420698 52.569099,-2.420654 52.568985,-2.421591 52.568985,-2.421713 52.568911,-2.421648 52.569191,-2.422469 52.569489,-2.422256 52.569792,-2.422074 52.569713)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28199">89632d544d34...</a></td>
             <td>28198</td>
-                <td>DEEPDALE COPPICE</td> 
                 <td>ancient-woodland:1121184</td> 
+                <td>DEEPDALE COPPICE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -321,10 +288,28 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28195">89632d544d34...</a></td>
+            <td>28194</td>
+                <td>ancient-woodland:1121184</td> 
+                <td>DEEPDALE COPPICE</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.412714 52.555782,-2.412573 52.555701,-2.412408 52.555718,-2.412633 52.555294,-2.412672 52.555069,-2.412387 52.554450,-2.412450 52.554409,-2.414196 52.555740,-2.414000 52.555792,-2.413525 52.555536,-2.413205 52.555869,-2.413023 52.556204,-2.412956 52.556169,-2.412894 52.555988,-2.412714 52.555782)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28201">89632d544d34...</a></td>
             <td>28200</td>
-                <td>DEEPDALE COPPICE</td> 
                 <td>ancient-woodland:1121184</td> 
+                <td>DEEPDALE COPPICE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -339,10 +324,28 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28198">89632d544d34...</a></td>
+            <td>28197</td>
+                <td>ancient-woodland:1121184</td> 
+                <td>DEEPDALE COPPICE</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.415410 52.562855,-2.415303 52.562832,-2.415223 52.562856,-2.414945 52.562742,-2.414952 52.562397,-2.414932 52.562317,-2.414880 52.562272,-2.414434 52.562072,-2.414413 52.562029,-2.413881 52.561835,-2.413882 52.561799,-2.413723 52.561640,-2.413732 52.561356,-2.413841 52.561181,-2.413848 52.561088,-2.414594 52.561004,-2.414638 52.561205,-2.414619 52.561296,-2.414682 52.561450,-2.414642 52.561758,-2.414724 52.562100,-2.414760 52.562170,-2.414844 52.562132,-2.414885 52.562173,-2.415483 52.562871,-2.415410 52.562855)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28200">89632d544d34...</a></td>
             <td>28199</td>
-                <td>DEEPDALE COPPICE</td> 
                 <td>ancient-woodland:1121184</td> 
+                <td>DEEPDALE COPPICE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">

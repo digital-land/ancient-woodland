@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -213,24 +216,6 @@ crossorigin="" />
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L44301">89632d544d34...</a></td>
-            <td>44300</td>
-                <td>ROCKINGHAM PARK WOOD</td> 
-                <td>ancient-woodland:1108257</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.736869 52.505568,-0.736901 52.505429,-0.736854 52.505055,-0.736522 52.504493,-0.736137 52.504147,-0.735686 52.503869,-0.735047 52.503577,-0.734810 52.503487,-0.734576 52.503485,-0.734239 52.503301,-0.734413 52.503148,-0.734430 52.502873,-0.734179 52.502669,-0.734135 52.502690,-0.733925 52.502523,-0.733746 52.502270,-0.733748 52.501907,-0.733663 52.501901,-0.733663 52.501668,-0.733730 52.501349,-0.733840 52.501144,-0.734625 52.501480,-0.734859 52.501645,-0.734998 52.501650,-0.735188 52.501795,-0.735879 52.502521,-0.736088 52.502682,-0.736215 52.502629,-0.737609 52.504126,-0.737667 52.504153,-0.737906 52.504550,-0.738356 52.505170,-0.738904 52.505487,-0.738524 52.505676,-0.738330 52.505875,-0.738137 52.505938,-0.737963 52.505921,-0.737838 52.505863,-0.737813 52.505815,-0.736869 52.505568)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L44302">89632d544d34...</a></td>
             <td>44301</td>
                 <td>ROCKINGHAM PARK WOOD</td> 
@@ -244,6 +229,24 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-0.736869 52.505568,-0.735105 52.505091,-0.735028 52.505044,-0.734576 52.503485,-0.734810 52.503487,-0.735686 52.503869,-0.736137 52.504147,-0.736522 52.504493,-0.736854 52.505055,-0.736901 52.505429,-0.736869 52.505568)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L44301">89632d544d34...</a></td>
+            <td>44300</td>
+                <td>ROCKINGHAM PARK WOOD</td> 
+                <td>ancient-woodland:1108257</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.736869 52.505568,-0.736901 52.505429,-0.736854 52.505055,-0.736522 52.504493,-0.736137 52.504147,-0.735686 52.503869,-0.735047 52.503577,-0.734810 52.503487,-0.734576 52.503485,-0.734239 52.503301,-0.734413 52.503148,-0.734430 52.502873,-0.734179 52.502669,-0.734135 52.502690,-0.733925 52.502523,-0.733746 52.502270,-0.733748 52.501907,-0.733663 52.501901,-0.733663 52.501668,-0.733730 52.501349,-0.733840 52.501144,-0.734625 52.501480,-0.734859 52.501645,-0.734998 52.501650,-0.735188 52.501795,-0.735879 52.502521,-0.736088 52.502682,-0.736215 52.502629,-0.737609 52.504126,-0.737667 52.504153,-0.737906 52.504550,-0.738356 52.505170,-0.738904 52.505487,-0.738524 52.505676,-0.738330 52.505875,-0.738137 52.505938,-0.737963 52.505921,-0.737838 52.505863,-0.737813 52.505815,-0.736869 52.505568)))
   </div>
 </details>
                 </td>

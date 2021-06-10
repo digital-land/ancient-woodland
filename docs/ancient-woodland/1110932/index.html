@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,13 +157,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1110932</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                BLAKES COPSE            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                ancient-woodland:1110932            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                BLAKES COPSE            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -206,8 +209,8 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
@@ -215,8 +218,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22843">89632d544d34...</a></td>
             <td>22842</td>
-                <td>BLAKES COPSE</td> 
                 <td>ancient-woodland:1110932</td> 
+                <td>BLAKES COPSE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -231,28 +234,10 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22845">89632d544d34...</a></td>
-            <td>22844</td>
-                <td>BLAKES COPSE</td> 
-                <td>ancient-woodland:1110932</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.636544 51.449617,-1.636144 51.449408,-1.635998 51.449492,-1.635677 51.449361,-1.635366 51.449188,-1.634249 51.448345,-1.633633 51.447920,-1.633272 51.447699,-1.632241 51.447166,-1.632166 51.447091,-1.631957 51.446683,-1.631828 51.446520,-1.631623 51.446326,-1.631355 51.446133,-1.630754 51.445809,-1.629952 51.445536,-1.630135 51.445335,-1.630350 51.445403,-1.630760 51.445391,-1.631193 51.445325,-1.631647 51.445151,-1.632237 51.444811,-1.633027 51.445242,-1.633861 51.445773,-1.633947 51.445810,-1.634546 51.445907,-1.634646 51.446122,-1.634757 51.446268,-1.635469 51.446855,-1.635774 51.447205,-1.635892 51.447472,-1.635852 51.447810,-1.635920 51.448245,-1.636178 51.448562,-1.636425 51.449002,-1.636909 51.449456,-1.637062 51.449732,-1.637203 51.449914,-1.636544 51.449617)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22844">89632d544d34...</a></td>
             <td>22843</td>
-                <td>BLAKES COPSE</td> 
                 <td>ancient-woodland:1110932</td> 
+                <td>BLAKES COPSE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -262,6 +247,24 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-1.629471 51.444645,-1.629497 51.444079,-1.629539 51.443790,-1.629571 51.443779,-1.629279 51.443220,-1.629270 51.443121,-1.629319 51.442952,-1.630397 51.443112,-1.630693 51.443133,-1.631003 51.443108,-1.632278 51.443263,-1.632664 51.443344,-1.633369 51.443419,-1.633848 51.443542,-1.633859 51.443594,-1.633381 51.443646,-1.632810 51.443667,-1.632200 51.443633,-1.631968 51.443670,-1.631520 51.443940,-1.631061 51.444124,-1.630832 51.444147,-1.630644 51.444427,-1.630551 51.444694,-1.630246 51.444918,-1.629943 51.445065,-1.629705 51.445091,-1.629554 51.445037,-1.629471 51.444645)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22845">89632d544d34...</a></td>
+            <td>22844</td>
+                <td>ancient-woodland:1110932</td> 
+                <td>BLAKES COPSE</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.636544 51.449617,-1.636144 51.449408,-1.635998 51.449492,-1.635677 51.449361,-1.635366 51.449188,-1.634249 51.448345,-1.633633 51.447920,-1.633272 51.447699,-1.632241 51.447166,-1.632166 51.447091,-1.631957 51.446683,-1.631828 51.446520,-1.631623 51.446326,-1.631355 51.446133,-1.630754 51.445809,-1.629952 51.445536,-1.630135 51.445335,-1.630350 51.445403,-1.630760 51.445391,-1.631193 51.445325,-1.631647 51.445151,-1.632237 51.444811,-1.633027 51.445242,-1.633861 51.445773,-1.633947 51.445810,-1.634546 51.445907,-1.634646 51.446122,-1.634757 51.446268,-1.635469 51.446855,-1.635774 51.447205,-1.635892 51.447472,-1.635852 51.447810,-1.635920 51.448245,-1.636178 51.448562,-1.636425 51.449002,-1.636909 51.449456,-1.637062 51.449732,-1.637203 51.449914,-1.636544 51.449617)))
   </div>
 </details>
                 </td>

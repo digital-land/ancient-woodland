@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -206,35 +209,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L44288">89632d544d34...</a></td>
-            <td>44287</td>
-                <td>ROCK PARK WOOD</td> 
-                <td>ancient-woodland:1114240</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-4.333596 50.411868,-4.332386 50.411729,-4.331568 50.411549,-4.331089 50.411254,-4.330570 50.410772,-4.332024 50.410972,-4.334742 50.411430,-4.335090 50.411538,-4.335057 50.411743,-4.335296 50.411772,-4.335442 50.411756,-4.335460 50.411813,-4.334844 50.411855,-4.334239 50.411856,-4.333922 50.411929,-4.333596 50.411868)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L44289">89632d544d34...</a></td>
             <td>44288</td>
-                <td>ROCK PARK WOOD</td> 
                 <td>ancient-woodland:1114240</td> 
+                <td>ROCK PARK WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -251,8 +236,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L44287">89632d544d34...</a></td>
             <td>44286</td>
-                <td>ROCK PARK WOOD</td> 
                 <td>ancient-woodland:1114240</td> 
+                <td>ROCK PARK WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -262,6 +247,24 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-4.330747 50.409881,-4.330797 50.409854,-4.330849 50.409937,-4.330581 50.410212,-4.330405 50.410612,-4.330471 50.410974,-4.330507 50.411015,-4.330307 50.411186,-4.330100 50.411335,-4.330001 50.411351,-4.329430 50.410950,-4.329815 50.410628,-4.330268 50.410171,-4.330747 50.409881)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L44288">89632d544d34...</a></td>
+            <td>44287</td>
+                <td>ancient-woodland:1114240</td> 
+                <td>ROCK PARK WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-4.333596 50.411868,-4.332386 50.411729,-4.331568 50.411549,-4.331089 50.411254,-4.330570 50.410772,-4.332024 50.410972,-4.334742 50.411430,-4.335090 50.411538,-4.335057 50.411743,-4.335296 50.411772,-4.335442 50.411756,-4.335460 50.411813,-4.334844 50.411855,-4.334239 50.411856,-4.333922 50.411929,-4.333596 50.411868)))
   </div>
 </details>
                 </td>

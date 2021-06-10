@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -206,35 +209,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L33382">89632d544d34...</a></td>
-            <td>33381</td>
-                <td>HAZELTON AND CHESLAND WOODS</td> 
-                <td>ancient-woodland:1110233</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.260473 51.396035,-2.260917 51.395986,-2.261956 51.396749,-2.261867 51.396959,-2.261691 51.397173,-2.261712 51.397614,-2.260674 51.397706,-2.260549 51.397067,-2.260380 51.396608,-2.260299 51.396098,-2.260340 51.396058,-2.260473 51.396035)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L33381">89632d544d34...</a></td>
             <td>33380</td>
-                <td>HAZELTON AND CHESLAND WOODS</td> 
                 <td>ancient-woodland:1110233</td> 
+                <td>HAZELTON AND CHESLAND WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -244,6 +229,24 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-2.262406 51.396918,-2.261156 51.395990,-2.261999 51.395966,-2.261437 51.394887,-2.260645 51.393993,-2.260171 51.393238,-2.260792 51.393221,-2.261583 51.394030,-2.261540 51.394257,-2.261585 51.394372,-2.262238 51.394668,-2.262891 51.394812,-2.262987 51.395235,-2.263161 51.395606,-2.263231 51.395683,-2.263345 51.395740,-2.263760 51.395688,-2.264102 51.395516,-2.264363 51.395268,-2.264845 51.394667,-2.265036 51.394481,-2.265187 51.394384,-2.267415 51.394428,-2.267238 51.395105,-2.266149 51.396449,-2.264691 51.396732,-2.263861 51.396800,-2.262621 51.396798,-2.262406 51.396918)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L33382">89632d544d34...</a></td>
+            <td>33381</td>
+                <td>ancient-woodland:1110233</td> 
+                <td>HAZELTON AND CHESLAND WOODS</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.260473 51.396035,-2.260917 51.395986,-2.261956 51.396749,-2.261867 51.396959,-2.261691 51.397173,-2.261712 51.397614,-2.260674 51.397706,-2.260549 51.397067,-2.260380 51.396608,-2.260299 51.396098,-2.260340 51.396058,-2.260473 51.396035)))
   </div>
 </details>
                 </td>

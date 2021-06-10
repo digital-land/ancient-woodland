@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -206,17 +209,35 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22951">89632d544d34...</a></td>
+            <td>22950</td>
+                <td>ancient-woodland:1103341</td> 
+                <td>BOAR HOLE WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.616044 53.986058,-1.615670 53.986269,-1.615415 53.986224,-1.615240 53.986267,-1.615041 53.986410,-1.614767 53.986713,-1.614711 53.986730,-1.614570 53.986701,-1.614176 53.986449,-1.614048 53.986414,-1.613296 53.986426,-1.612873 53.986358,-1.612871 53.986414,-1.612491 53.986592,-1.612217 53.986525,-1.612052 53.986562,-1.611772 53.986457,-1.611463 53.986216,-1.611388 53.986125,-1.611268 53.985870,-1.611133 53.985709,-1.611049 53.985538,-1.610967 53.985462,-1.611326 53.985388,-1.611984 53.985159,-1.612529 53.985065,-1.613327 53.984842,-1.613692 53.984776,-1.614346 53.984535,-1.616044 53.986058)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22950">89632d544d34...</a></td>
             <td>22949</td>
-                <td>BOAR HOLE WOOD</td> 
                 <td>ancient-woodland:1103341</td> 
+                <td>BOAR HOLE WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -233,8 +254,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22949">89632d544d34...</a></td>
             <td>22948</td>
-                <td>BOAR HOLE WOOD</td> 
                 <td>ancient-woodland:1103341</td> 
+                <td>BOAR HOLE WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -244,24 +265,6 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-1.615965 53.985999,-1.614346 53.984535,-1.614361 53.984508,-1.615581 53.984084,-1.616359 53.983896,-1.616929 53.983701,-1.617951 53.983423,-1.618278 53.983407,-1.618230 53.983369,-1.619638 53.982835,-1.620487 53.982594,-1.621047 53.982510,-1.621622 53.982467,-1.623769 53.982511,-1.623701 53.982773,-1.623718 53.982917,-1.624581 53.982796,-1.624181 53.983282,-1.624150 53.983500,-1.623998 53.983785,-1.623849 53.983781,-1.623754 53.983825,-1.623439 53.984024,-1.623342 53.984126,-1.623249 53.984444,-1.623154 53.984565,-1.623020 53.985011,-1.622833 53.985315,-1.622676 53.985652,-1.622463 53.985777,-1.622393 53.985760,-1.622362 53.985561,-1.622263 53.985436,-1.622207 53.985404,-1.621863 53.985365,-1.621504 53.985052,-1.621251 53.984913,-1.621215 53.984783,-1.621098 53.984764,-1.620794 53.984844,-1.620591 53.984788,-1.620512 53.984795,-1.620327 53.984978,-1.619955 53.984844,-1.619847 53.984849,-1.619707 53.984956,-1.619628 53.985202,-1.619551 53.985278,-1.619301 53.985369,-1.618508 53.985535,-1.618128 53.985654,-1.618090 53.985700,-1.618111 53.985843,-1.617636 53.985965,-1.617521 53.985991,-1.617512 53.985966,-1.617341 53.986019,-1.617052 53.985959,-1.616856 53.986011,-1.616428 53.985929,-1.616219 53.985957,-1.616044 53.986058,-1.615965 53.985999)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22951">89632d544d34...</a></td>
-            <td>22950</td>
-                <td>BOAR HOLE WOOD</td> 
-                <td>ancient-woodland:1103341</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.616044 53.986058,-1.615670 53.986269,-1.615415 53.986224,-1.615240 53.986267,-1.615041 53.986410,-1.614767 53.986713,-1.614711 53.986730,-1.614570 53.986701,-1.614176 53.986449,-1.614048 53.986414,-1.613296 53.986426,-1.612873 53.986358,-1.612871 53.986414,-1.612491 53.986592,-1.612217 53.986525,-1.612052 53.986562,-1.611772 53.986457,-1.611463 53.986216,-1.611388 53.986125,-1.611268 53.985870,-1.611133 53.985709,-1.611049 53.985538,-1.610967 53.985462,-1.611326 53.985388,-1.611984 53.985159,-1.612529 53.985065,-1.613327 53.984842,-1.613692 53.984776,-1.614346 53.984535,-1.616044 53.986058)))
   </div>
 </details>
                 </td>

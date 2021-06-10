@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -206,8 +209,8 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
@@ -215,8 +218,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L45908">89632d544d34...</a></td>
             <td>45907</td>
-                <td>SHRAWLEY WOOD</td> 
                 <td>ancient-woodland:1106979</td> 
+                <td>SHRAWLEY WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -231,28 +234,10 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L45909">89632d544d34...</a></td>
-            <td>45908</td>
-                <td>SHRAWLEY WOOD</td> 
-                <td>ancient-woodland:1106979</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.278830 52.297441,-2.278556 52.297452,-2.278541 52.297415,-2.278539 52.297456,-2.278465 52.297464,-2.278500 52.297299,-2.278151 52.297048,-2.277762 52.296626,-2.275695 52.293435,-2.275353 52.292613,-2.275234 52.292614,-2.275250 52.292523,-2.275028 52.291907,-2.274605 52.291196,-2.275009 52.291100,-2.275144 52.291303,-2.275311 52.291398,-2.275177 52.291688,-2.275335 52.291830,-2.275307 52.291868,-2.275389 52.292029,-2.275492 52.292056,-2.275537 52.292119,-2.275512 52.292204,-2.275643 52.292413,-2.275555 52.292553,-2.275546 52.292652,-2.275665 52.292814,-2.276729 52.294880,-2.277897 52.296754,-2.278475 52.297216,-2.278684 52.297252,-2.278933 52.297367,-2.278866 52.297441,-2.279030 52.297466,-2.278830 52.297441)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L45903">89632d544d34...</a></td>
             <td>45902</td>
-                <td>SHRAWLEY WOOD</td> 
                 <td>ancient-woodland:1106979</td> 
+                <td>SHRAWLEY WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -267,10 +252,28 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L45907">89632d544d34...</a></td>
+            <td>45906</td>
+                <td>ancient-woodland:1106979</td> 
+                <td>SHRAWLEY WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.274627 52.289800,-2.274614 52.289765,-2.274785 52.289785,-2.274820 52.289819,-2.274841 52.290147,-2.274903 52.290344,-2.274889 52.290588,-2.274627 52.289800)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L45910">89632d544d34...</a></td>
             <td>45909</td>
-                <td>SHRAWLEY WOOD</td> 
                 <td>ancient-woodland:1106979</td> 
+                <td>SHRAWLEY WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -287,8 +290,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L45911">89632d544d34...</a></td>
             <td>45910</td>
-                <td>SHRAWLEY WOOD</td> 
                 <td>ancient-woodland:1106979</td> 
+                <td>SHRAWLEY WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -303,28 +306,10 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L45907">89632d544d34...</a></td>
-            <td>45906</td>
-                <td>SHRAWLEY WOOD</td> 
-                <td>ancient-woodland:1106979</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.274627 52.289800,-2.274614 52.289765,-2.274785 52.289785,-2.274820 52.289819,-2.274841 52.290147,-2.274903 52.290344,-2.274889 52.290588,-2.274627 52.289800)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L45905">89632d544d34...</a></td>
             <td>45904</td>
-                <td>SHRAWLEY WOOD</td> 
                 <td>ancient-woodland:1106979</td> 
+                <td>SHRAWLEY WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -341,8 +326,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L45912">89632d544d34...</a></td>
             <td>45911</td>
-                <td>SHRAWLEY WOOD</td> 
                 <td>ancient-woodland:1106979</td> 
+                <td>SHRAWLEY WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -359,8 +344,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L45904">89632d544d34...</a></td>
             <td>45903</td>
-                <td>SHRAWLEY WOOD</td> 
                 <td>ancient-woodland:1106979</td> 
+                <td>SHRAWLEY WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -375,10 +360,28 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L45909">89632d544d34...</a></td>
+            <td>45908</td>
+                <td>ancient-woodland:1106979</td> 
+                <td>SHRAWLEY WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.278830 52.297441,-2.278556 52.297452,-2.278541 52.297415,-2.278539 52.297456,-2.278465 52.297464,-2.278500 52.297299,-2.278151 52.297048,-2.277762 52.296626,-2.275695 52.293435,-2.275353 52.292613,-2.275234 52.292614,-2.275250 52.292523,-2.275028 52.291907,-2.274605 52.291196,-2.275009 52.291100,-2.275144 52.291303,-2.275311 52.291398,-2.275177 52.291688,-2.275335 52.291830,-2.275307 52.291868,-2.275389 52.292029,-2.275492 52.292056,-2.275537 52.292119,-2.275512 52.292204,-2.275643 52.292413,-2.275555 52.292553,-2.275546 52.292652,-2.275665 52.292814,-2.276729 52.294880,-2.277897 52.296754,-2.278475 52.297216,-2.278684 52.297252,-2.278933 52.297367,-2.278866 52.297441,-2.279030 52.297466,-2.278830 52.297441)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L45906">89632d544d34...</a></td>
             <td>45905</td>
-                <td>SHRAWLEY WOOD</td> 
                 <td>ancient-woodland:1106979</td> 
+                <td>SHRAWLEY WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">

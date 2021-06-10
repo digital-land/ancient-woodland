@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -206,8 +209,8 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
@@ -215,8 +218,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L48638">89632d544d34...</a></td>
             <td>48637</td>
-                <td>THISTLEMOOR WOOD</td> 
                 <td>ancient-woodland:1115476</td> 
+                <td>THISTLEMOOR WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -231,10 +234,10 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L48639">89632d544d34...</a></td>
-            <td>48638</td>
-                <td>THISTLEMOOR WOOD</td> 
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L48640">89632d544d34...</a></td>
+            <td>48639</td>
                 <td>ancient-woodland:1115476</td> 
+                <td>THISTLEMOOR WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -243,7 +246,7 @@ crossorigin="" />
     </span>
   </summary>
   <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.306709 52.591007,-0.308214 52.590410,-0.308294 52.590433,-0.308137 52.590607,-0.306903 52.592411,-0.304129 52.591586,-0.304652 52.591475,-0.305150 52.591205,-0.305784 52.590994,-0.306709 52.591007)))
+    MULTIPOLYGON (((-0.309519 52.591643,-0.309555 52.591293,-0.309826 52.590880,-0.311617 52.591370,-0.311916 52.591344,-0.312022 52.591502,-0.312070 52.592019,-0.312009 52.592146,-0.311544 52.592730,-0.311351 52.593079,-0.310360 52.592801,-0.310078 52.592649,-0.309758 52.592348,-0.309592 52.592049,-0.309519 52.591643)))
   </div>
 </details>
                 </td>
@@ -251,8 +254,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L48641">89632d544d34...</a></td>
             <td>48640</td>
-                <td>THISTLEMOOR WOOD</td> 
                 <td>ancient-woodland:1115476</td> 
+                <td>THISTLEMOOR WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -267,10 +270,10 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L48640">89632d544d34...</a></td>
-            <td>48639</td>
-                <td>THISTLEMOOR WOOD</td> 
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L48639">89632d544d34...</a></td>
+            <td>48638</td>
                 <td>ancient-woodland:1115476</td> 
+                <td>THISTLEMOOR WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -279,7 +282,7 @@ crossorigin="" />
     </span>
   </summary>
   <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.309519 52.591643,-0.309555 52.591293,-0.309826 52.590880,-0.311617 52.591370,-0.311916 52.591344,-0.312022 52.591502,-0.312070 52.592019,-0.312009 52.592146,-0.311544 52.592730,-0.311351 52.593079,-0.310360 52.592801,-0.310078 52.592649,-0.309758 52.592348,-0.309592 52.592049,-0.309519 52.591643)))
+    MULTIPOLYGON (((-0.306709 52.591007,-0.308214 52.590410,-0.308294 52.590433,-0.308137 52.590607,-0.306903 52.592411,-0.304129 52.591586,-0.304652 52.591475,-0.305150 52.591205,-0.305784 52.590994,-0.306709 52.591007)))
   </div>
 </details>
                 </td>

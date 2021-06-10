@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -206,53 +209,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L38350">89632d544d34...</a></td>
-            <td>38349</td>
-                <td>LOWER CROAN WOOD</td> 
-                <td>ancient-woodland:1114057</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-4.781711 50.507161,-4.781405 50.506711,-4.781164 50.505968,-4.780847 50.505508,-4.780749 50.505427,-4.780762 50.505385,-4.781599 50.505977,-4.782314 50.506622,-4.783761 50.505998,-4.783862 50.505882,-4.784136 50.506022,-4.785166 50.506363,-4.785854 50.506398,-4.786392 50.506378,-4.786907 50.506287,-4.787900 50.506370,-4.788264 50.506326,-4.788296 50.506310,-4.788298 50.506179,-4.788480 50.506175,-4.788713 50.506255,-4.788980 50.506237,-4.789301 50.506055,-4.789368 50.505972,-4.789433 50.505805,-4.789620 50.505765,-4.789702 50.505954,-4.789782 50.506299,-4.789914 50.506669,-4.789894 50.506834,-4.789952 50.507011,-4.789634 50.506965,-4.788509 50.506911,-4.787494 50.506920,-4.786431 50.507046,-4.784576 50.507424,-4.783573 50.507352,-4.783193 50.507265,-4.782880 50.507111,-4.782604 50.507362,-4.782101 50.507507,-4.781879 50.507372,-4.781711 50.507161)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L38351">89632d544d34...</a></td>
-            <td>38350</td>
-                <td>LOWER CROAN WOOD</td> 
-                <td>ancient-woodland:1114057</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-4.781613 50.508035,-4.781588 50.507972,-4.781465 50.507988,-4.781241 50.508079,-4.781067 50.507744,-4.780899 50.507549,-4.780875 50.507412,-4.780938 50.507252,-4.780436 50.506784,-4.780332 50.506641,-4.780253 50.506636,-4.780243 50.506395,-4.780062 50.505918,-4.779971 50.505778,-4.779792 50.505645,-4.779631 50.505610,-4.779532 50.505528,-4.779383 50.505539,-4.779297 50.505498,-4.779304 50.505444,-4.779377 50.505373,-4.779456 50.505412,-4.779955 50.504951,-4.780543 50.505360,-4.780897 50.505724,-4.781060 50.505975,-4.781267 50.506616,-4.781390 50.506891,-4.781624 50.507217,-4.781846 50.507444,-4.782264 50.507667,-4.782836 50.507798,-4.782413 50.507782,-4.782216 50.507849,-4.782123 50.507999,-4.782236 50.508049,-4.782301 50.508229,-4.782117 50.508190,-4.782109 50.508141,-4.781613 50.508035)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L38352">89632d544d34...</a></td>
             <td>38351</td>
-                <td>LOWER CROAN WOOD</td> 
                 <td>ancient-woodland:1114057</td> 
+                <td>LOWER CROAN WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -269,8 +236,8 @@ crossorigin="" />
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L38355">89632d544d34...</a></td>
             <td>38354</td>
-                <td>LOWER CROAN WOOD</td> 
                 <td>ancient-woodland:1114057</td> 
+                <td>LOWER CROAN WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -285,10 +252,28 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L38354">89632d544d34...</a></td>
+            <td>38353</td>
+                <td>ancient-woodland:1114057</td> 
+                <td>LOWER CROAN WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-4.782559 50.507687,-4.782101 50.507507,-4.782604 50.507362,-4.782880 50.507111,-4.783193 50.507265,-4.783573 50.507352,-4.784572 50.507424,-4.783497 50.507694,-4.783396 50.507656,-4.783292 50.507667,-4.783218 50.507724,-4.782792 50.507721,-4.782559 50.507687)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L38353">89632d544d34...</a></td>
             <td>38352</td>
-                <td>LOWER CROAN WOOD</td> 
                 <td>ancient-woodland:1114057</td> 
+                <td>LOWER CROAN WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -303,10 +288,10 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L38354">89632d544d34...</a></td>
-            <td>38353</td>
-                <td>LOWER CROAN WOOD</td> 
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L38351">89632d544d34...</a></td>
+            <td>38350</td>
                 <td>ancient-woodland:1114057</td> 
+                <td>LOWER CROAN WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -315,7 +300,25 @@ crossorigin="" />
     </span>
   </summary>
   <div class="govuk-details__text">
-    MULTIPOLYGON (((-4.782559 50.507687,-4.782101 50.507507,-4.782604 50.507362,-4.782880 50.507111,-4.783193 50.507265,-4.783573 50.507352,-4.784572 50.507424,-4.783497 50.507694,-4.783396 50.507656,-4.783292 50.507667,-4.783218 50.507724,-4.782792 50.507721,-4.782559 50.507687)))
+    MULTIPOLYGON (((-4.781613 50.508035,-4.781588 50.507972,-4.781465 50.507988,-4.781241 50.508079,-4.781067 50.507744,-4.780899 50.507549,-4.780875 50.507412,-4.780938 50.507252,-4.780436 50.506784,-4.780332 50.506641,-4.780253 50.506636,-4.780243 50.506395,-4.780062 50.505918,-4.779971 50.505778,-4.779792 50.505645,-4.779631 50.505610,-4.779532 50.505528,-4.779383 50.505539,-4.779297 50.505498,-4.779304 50.505444,-4.779377 50.505373,-4.779456 50.505412,-4.779955 50.504951,-4.780543 50.505360,-4.780897 50.505724,-4.781060 50.505975,-4.781267 50.506616,-4.781390 50.506891,-4.781624 50.507217,-4.781846 50.507444,-4.782264 50.507667,-4.782836 50.507798,-4.782413 50.507782,-4.782216 50.507849,-4.782123 50.507999,-4.782236 50.508049,-4.782301 50.508229,-4.782117 50.508190,-4.782109 50.508141,-4.781613 50.508035)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L38350">89632d544d34...</a></td>
+            <td>38349</td>
+                <td>ancient-woodland:1114057</td> 
+                <td>LOWER CROAN WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-4.781711 50.507161,-4.781405 50.506711,-4.781164 50.505968,-4.780847 50.505508,-4.780749 50.505427,-4.780762 50.505385,-4.781599 50.505977,-4.782314 50.506622,-4.783761 50.505998,-4.783862 50.505882,-4.784136 50.506022,-4.785166 50.506363,-4.785854 50.506398,-4.786392 50.506378,-4.786907 50.506287,-4.787900 50.506370,-4.788264 50.506326,-4.788296 50.506310,-4.788298 50.506179,-4.788480 50.506175,-4.788713 50.506255,-4.788980 50.506237,-4.789301 50.506055,-4.789368 50.505972,-4.789433 50.505805,-4.789620 50.505765,-4.789702 50.505954,-4.789782 50.506299,-4.789914 50.506669,-4.789894 50.506834,-4.789952 50.507011,-4.789634 50.506965,-4.788509 50.506911,-4.787494 50.506920,-4.786431 50.507046,-4.784576 50.507424,-4.783573 50.507352,-4.783193 50.507265,-4.782880 50.507111,-4.782604 50.507362,-4.782101 50.507507,-4.781879 50.507372,-4.781711 50.507161)))
   </div>
 </details>
                 </td>
