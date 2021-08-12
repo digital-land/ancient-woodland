@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<link rel="manifest" href="/site.webmanifest">
 <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
@@ -140,8 +139,7 @@ crossorigin="" />
                 <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
                 Record
                 </a>
-            </li>
-            <li class="dlf-subnav__list-item">
+            </li>            <li class="dlf-subnav__list-item">
                 <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
                 History
                 </a>
@@ -197,9 +195,7 @@ crossorigin="" />
 <ul class="govuk-list govuk-list--bullet">
     <li><a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a></li></ul>
 
-</div>
-
-<div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
+</div><div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
     <div class="data-table-left-shadow with-transition"></div>
     <div class="wide-table">
@@ -209,15 +205,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geometry</th>
             <th>geography</th>
             <th>name</th>
+            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L45972">89632d544d34...</a></td>
             <td>45971</td>
+                <td>ancient-woodland:1103272</td> 
+                <td>SILKSTONE FALL SOUTH</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -230,30 +228,12 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>ancient-woodland:1103272</td> 
-                <td>SILKSTONE FALL SOUTH</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L45970">89632d544d34...</a></td>
-            <td>45969</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.558505 53.544131,-1.558224 53.544051,-1.557942 53.543864,-1.557539 53.543683,-1.557190 53.543332,-1.557205 53.543289,-1.557425 53.543075,-1.557557 53.543174,-1.557701 53.543348,-1.558359 53.543479,-1.558840 53.543705,-1.559861 53.543888,-1.560458 53.543941,-1.560991 53.544041,-1.561105 53.544030,-1.561390 53.544133,-1.561346 53.544157,-1.561341 53.544359,-1.561267 53.544419,-1.559460 53.544298,-1.558505 53.544131)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1103272</td> 
-                <td>SILKSTONE FALL SOUTH</td> 
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L45969">89632d544d34...</a></td>
             <td>45968</td>
+                <td>ancient-woodland:1103272</td> 
+                <td>SILKSTONE FALL SOUTH</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -266,12 +246,30 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L45970">89632d544d34...</a></td>
+            <td>45969</td>
                 <td>ancient-woodland:1103272</td> 
                 <td>SILKSTONE FALL SOUTH</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.558505 53.544131,-1.558224 53.544051,-1.557942 53.543864,-1.557539 53.543683,-1.557190 53.543332,-1.557205 53.543289,-1.557425 53.543075,-1.557557 53.543174,-1.557701 53.543348,-1.558359 53.543479,-1.558840 53.543705,-1.559861 53.543888,-1.560458 53.543941,-1.560991 53.544041,-1.561105 53.544030,-1.561390 53.544133,-1.561346 53.544157,-1.561341 53.544359,-1.561267 53.544419,-1.559460 53.544298,-1.558505 53.544131)))
+  </div>
+</details>
+                </td>
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L45971">89632d544d34...</a></td>
             <td>45970</td>
+                <td>ancient-woodland:1103272</td> 
+                <td>SILKSTONE FALL SOUTH</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -284,8 +282,6 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>ancient-woodland:1103272</td> 
-                <td>SILKSTONE FALL SOUTH</td> 
         </tr>    </tbody>
 </table>
 

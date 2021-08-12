@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<link rel="manifest" href="/site.webmanifest">
 <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
@@ -140,8 +139,7 @@ crossorigin="" />
                 <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
                 Record
                 </a>
-            </li>
-            <li class="dlf-subnav__list-item">
+            </li>            <li class="dlf-subnav__list-item">
                 <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
                 History
                 </a>
@@ -197,9 +195,7 @@ crossorigin="" />
 <ul class="govuk-list govuk-list--bullet">
     <li><a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a></li></ul>
 
-</div>
-
-<div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
+</div><div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
     <div class="data-table-left-shadow with-transition"></div>
     <div class="wide-table">
@@ -209,15 +205,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geometry</th>
             <th>geography</th>
             <th>name</th>
+            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L46529">89632d544d34...</a></td>
             <td>46528</td>
+                <td>ancient-woodland:1110865</td> 
+                <td>SOUTHGROVE COPSE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -230,30 +228,12 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>ancient-woodland:1110865</td> 
-                <td>SOUTHGROVE COPSE</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L46532">89632d544d34...</a></td>
-            <td>46531</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.663043 51.333212,-1.662132 51.333380,-1.661407 51.333385,-1.661398 51.333406,-1.661334 51.333372,-1.661274 51.333195,-1.661294 51.332894,-1.661270 51.332134,-1.661207 51.332066,-1.661030 51.331998,-1.660373 51.331867,-1.660226 51.331789,-1.660018 51.331765,-1.657720 51.331734,-1.657469 51.331685,-1.657285 51.331610,-1.657894 51.330300,-1.658331 51.328604,-1.658744 51.327406,-1.662546 51.327785,-1.664301 51.328876,-1.665049 51.329232,-1.665170 51.329318,-1.665331 51.329260,-1.665853 51.329290,-1.666244 51.329240,-1.666491 51.329149,-1.666656 51.329018,-1.666840 51.328819,-1.666937 51.328638,-1.667193 51.328550,-1.667317 51.328576,-1.667411 51.328540,-1.667973 51.329299,-1.668037 51.329431,-1.670020 51.332064,-1.669335 51.332399,-1.669068 51.332728,-1.668698 51.332879,-1.668044 51.333080,-1.667629 51.333040,-1.666538 51.333278,-1.666572 51.333315,-1.665556 51.333682,-1.665009 51.333647,-1.664655 51.333578,-1.663377 51.333505,-1.663043 51.333212)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1110865</td> 
-                <td>SOUTHGROVE COPSE</td> 
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L46530">89632d544d34...</a></td>
             <td>46529</td>
+                <td>ancient-woodland:1110865</td> 
+                <td>SOUTHGROVE COPSE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -266,12 +246,30 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L46532">89632d544d34...</a></td>
+            <td>46531</td>
                 <td>ancient-woodland:1110865</td> 
                 <td>SOUTHGROVE COPSE</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.663043 51.333212,-1.662132 51.333380,-1.661407 51.333385,-1.661398 51.333406,-1.661334 51.333372,-1.661274 51.333195,-1.661294 51.332894,-1.661270 51.332134,-1.661207 51.332066,-1.661030 51.331998,-1.660373 51.331867,-1.660226 51.331789,-1.660018 51.331765,-1.657720 51.331734,-1.657469 51.331685,-1.657285 51.331610,-1.657894 51.330300,-1.658331 51.328604,-1.658744 51.327406,-1.662546 51.327785,-1.664301 51.328876,-1.665049 51.329232,-1.665170 51.329318,-1.665331 51.329260,-1.665853 51.329290,-1.666244 51.329240,-1.666491 51.329149,-1.666656 51.329018,-1.666840 51.328819,-1.666937 51.328638,-1.667193 51.328550,-1.667317 51.328576,-1.667411 51.328540,-1.667973 51.329299,-1.668037 51.329431,-1.670020 51.332064,-1.669335 51.332399,-1.669068 51.332728,-1.668698 51.332879,-1.668044 51.333080,-1.667629 51.333040,-1.666538 51.333278,-1.666572 51.333315,-1.665556 51.333682,-1.665009 51.333647,-1.664655 51.333578,-1.663377 51.333505,-1.663043 51.333212)))
+  </div>
+</details>
+                </td>
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L46531">89632d544d34...</a></td>
             <td>46530</td>
+                <td>ancient-woodland:1110865</td> 
+                <td>SOUTHGROVE COPSE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -284,8 +282,6 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>ancient-woodland:1110865</td> 
-                <td>SOUTHGROVE COPSE</td> 
         </tr>    </tbody>
 </table>
 

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<link rel="manifest" href="/site.webmanifest">
 <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
@@ -140,8 +139,7 @@ crossorigin="" />
                 <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
                 Record
                 </a>
-            </li>
-            <li class="dlf-subnav__list-item">
+            </li>            <li class="dlf-subnav__list-item">
                 <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
                 History
                 </a>
@@ -157,13 +155,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1101298</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                WESTSIDE DEAN            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                ancient-woodland:1101298            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                WESTSIDE DEAN            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -197,9 +195,7 @@ crossorigin="" />
 <ul class="govuk-list govuk-list--bullet">
     <li><a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a></li></ul>
 
-</div>
-
-<div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
+</div><div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
     <div class="data-table-left-shadow with-transition"></div>
     <div class="wide-table">
@@ -209,33 +205,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geometry</th>
             <th>geography</th>
             <th>name</th>
+            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L50676">89632d544d34...</a></td>
-            <td>50675</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.002310 55.067769,-2.000035 55.067683,-1.999255 55.067264,-1.999507 55.066925,-1.999622 55.066884,-1.999645 55.066845,-1.999595 55.066802,-1.999780 55.066537,-2.000381 55.066668,-2.000938 55.066703,-2.001342 55.066648,-2.001895 55.066481,-2.002889 55.066347,-2.003198 55.066230,-2.003771 55.065721,-2.003998 55.065615,-2.004261 55.065556,-2.004696 55.065524,-2.005084 55.065553,-2.005643 55.065757,-2.003397 55.066707,-2.003096 55.067189,-2.003186 55.067804,-2.002310 55.067769)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1101298</td> 
-                <td>WESTSIDE DEAN</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L50675">89632d544d34...</a></td>
             <td>50674</td>
+                <td>ancient-woodland:1101298</td> 
+                <td>WESTSIDE DEAN</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -248,8 +228,24 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L50676">89632d544d34...</a></td>
+            <td>50675</td>
                 <td>ancient-woodland:1101298</td> 
                 <td>WESTSIDE DEAN</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.002310 55.067769,-2.000035 55.067683,-1.999255 55.067264,-1.999507 55.066925,-1.999622 55.066884,-1.999645 55.066845,-1.999595 55.066802,-1.999780 55.066537,-2.000381 55.066668,-2.000938 55.066703,-2.001342 55.066648,-2.001895 55.066481,-2.002889 55.066347,-2.003198 55.066230,-2.003771 55.065721,-2.003998 55.065615,-2.004261 55.065556,-2.004696 55.065524,-2.005084 55.065553,-2.005643 55.065757,-2.003397 55.066707,-2.003096 55.067189,-2.003186 55.067804,-2.002310 55.067769)))
+  </div>
+</details>
+                </td>
         </tr>    </tbody>
 </table>
 

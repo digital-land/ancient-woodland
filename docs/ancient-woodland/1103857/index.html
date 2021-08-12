@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<link rel="manifest" href="/site.webmanifest">
 <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
@@ -140,8 +139,7 @@ crossorigin="" />
                 <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
                 Record
                 </a>
-            </li>
-            <li class="dlf-subnav__list-item">
+            </li>            <li class="dlf-subnav__list-item">
                 <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
                 History
                 </a>
@@ -197,9 +195,7 @@ crossorigin="" />
 <ul class="govuk-list govuk-list--bullet">
     <li><a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a></li></ul>
 
-</div>
-
-<div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
+</div><div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
     <div class="data-table-left-shadow with-transition"></div>
     <div class="wide-table">
@@ -209,33 +205,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geometry</th>
             <th>geography</th>
             <th>name</th>
+            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L51275">89632d544d34...</a></td>
-            <td>51274</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.901049 54.052776,-0.902942 54.053008,-0.904907 54.053018,-0.904998 54.053047,-0.904984 54.053085,-0.905067 54.053357,-0.904606 54.053428,-0.904674 54.053508,-0.904694 54.053598,-0.904444 54.053779,-0.904463 54.053841,-0.904133 54.054099,-0.904192 54.054172,-0.904428 54.054326,-0.904418 54.054419,-0.904207 54.054599,-0.904498 54.054761,-0.904433 54.054793,-0.902830 54.054218,-0.902378 54.053998,-0.902280 54.054128,-0.902198 54.054513,-0.902090 54.054683,-0.901906 54.054796,-0.901398 54.054956,-0.900915 54.054805,-0.901023 54.054619,-0.901444 54.054386,-0.901547 54.054225,-0.901398 54.054010,-0.901100 54.053910,-0.900879 54.053775,-0.901272 54.053795,-0.901049 54.052776)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1103857</td> 
-                <td>WILLOWBRIDGE/BOSENDALE WD</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L51277">89632d544d34...</a></td>
             <td>51276</td>
+                <td>ancient-woodland:1103857</td> 
+                <td>WILLOWBRIDGE/BOSENDALE WD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -248,12 +228,30 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L51275">89632d544d34...</a></td>
+            <td>51274</td>
                 <td>ancient-woodland:1103857</td> 
                 <td>WILLOWBRIDGE/BOSENDALE WD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.901049 54.052776,-0.902942 54.053008,-0.904907 54.053018,-0.904998 54.053047,-0.904984 54.053085,-0.905067 54.053357,-0.904606 54.053428,-0.904674 54.053508,-0.904694 54.053598,-0.904444 54.053779,-0.904463 54.053841,-0.904133 54.054099,-0.904192 54.054172,-0.904428 54.054326,-0.904418 54.054419,-0.904207 54.054599,-0.904498 54.054761,-0.904433 54.054793,-0.902830 54.054218,-0.902378 54.053998,-0.902280 54.054128,-0.902198 54.054513,-0.902090 54.054683,-0.901906 54.054796,-0.901398 54.054956,-0.900915 54.054805,-0.901023 54.054619,-0.901444 54.054386,-0.901547 54.054225,-0.901398 54.054010,-0.901100 54.053910,-0.900879 54.053775,-0.901272 54.053795,-0.901049 54.052776)))
+  </div>
+</details>
+                </td>
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L51276">89632d544d34...</a></td>
             <td>51275</td>
+                <td>ancient-woodland:1103857</td> 
+                <td>WILLOWBRIDGE/BOSENDALE WD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -266,8 +264,6 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>ancient-woodland:1103857</td> 
-                <td>WILLOWBRIDGE/BOSENDALE WD</td> 
         </tr>    </tbody>
 </table>
 

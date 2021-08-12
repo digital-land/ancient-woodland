@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<link rel="manifest" href="/site.webmanifest">
 <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
@@ -140,8 +139,7 @@ crossorigin="" />
                 <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
                 Record
                 </a>
-            </li>
-            <li class="dlf-subnav__list-item">
+            </li>            <li class="dlf-subnav__list-item">
                 <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
                 History
                 </a>
@@ -197,9 +195,7 @@ crossorigin="" />
 <ul class="govuk-list govuk-list--bullet">
     <li><a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a></li></ul>
 
-</div>
-
-<div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
+</div><div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
     <div class="data-table-left-shadow with-transition"></div>
     <div class="wide-table">
@@ -209,33 +205,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geometry</th>
             <th>geography</th>
             <th>name</th>
+            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L42559">89632d544d34...</a></td>
-            <td>42558</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.583001 53.225143,-2.583123 53.225105,-2.583252 53.225130,-2.583257 53.225086,-2.583335 53.225166,-2.582837 53.225490,-2.582460 53.225860,-2.582001 53.226199,-2.581652 53.226566,-2.581369 53.226809,-2.581015 53.226818,-2.580964 53.226865,-2.581086 53.226715,-2.581579 53.226507,-2.581653 53.226352,-2.581909 53.226179,-2.581992 53.226001,-2.581943 53.225921,-2.582048 53.225886,-2.582066 53.225835,-2.582123 53.225800,-2.582380 53.225736,-2.582378 53.225577,-2.582437 53.225532,-2.582608 53.225506,-2.582691 53.225446,-2.582843 53.225251,-2.583001 53.225143)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1104064</td> 
-                <td>PETTYPOOL WOOD</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L42557">89632d544d34...</a></td>
             <td>42556</td>
+                <td>ancient-woodland:1104064</td> 
+                <td>PETTYPOOL WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -248,12 +228,30 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L42559">89632d544d34...</a></td>
+            <td>42558</td>
                 <td>ancient-woodland:1104064</td> 
                 <td>PETTYPOOL WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.583001 53.225143,-2.583123 53.225105,-2.583252 53.225130,-2.583257 53.225086,-2.583335 53.225166,-2.582837 53.225490,-2.582460 53.225860,-2.582001 53.226199,-2.581652 53.226566,-2.581369 53.226809,-2.581015 53.226818,-2.580964 53.226865,-2.581086 53.226715,-2.581579 53.226507,-2.581653 53.226352,-2.581909 53.226179,-2.581992 53.226001,-2.581943 53.225921,-2.582048 53.225886,-2.582066 53.225835,-2.582123 53.225800,-2.582380 53.225736,-2.582378 53.225577,-2.582437 53.225532,-2.582608 53.225506,-2.582691 53.225446,-2.582843 53.225251,-2.583001 53.225143)))
+  </div>
+</details>
+                </td>
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L42558">89632d544d34...</a></td>
             <td>42557</td>
+                <td>ancient-woodland:1104064</td> 
+                <td>PETTYPOOL WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -266,8 +264,6 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>ancient-woodland:1104064</td> 
-                <td>PETTYPOOL WOOD</td> 
         </tr>    </tbody>
 </table>
 
