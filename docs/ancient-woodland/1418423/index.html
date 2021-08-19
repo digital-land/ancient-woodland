@@ -155,11 +155,11 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1418423</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">Geography
             </dt>
             <dd class="govuk-summary-list__value">                ancient-woodland:1418423            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">entry-date
+            <dt class="govuk-summary-list__key">Entry date
             </dt>
             <dd class="govuk-summary-list__value">                2021-05-26            </dd>
         </div>    
@@ -174,7 +174,7 @@ crossorigin="" />
     class="dl-map govuk-!-margin-top-4"
     id="dlMap"
     data-module="boundary-map"
-    style="height: 460px;" data-geojson-urls="geometry.geojson"   
+    style="height: 460px;"   
 >
     <noscript>To view this map, you need to enable JavaScript.</noscript>
 </div>
@@ -207,23 +207,6 @@ crossorigin="" />
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L4624">89632d544d34...</a></td>
-            <td>4623</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.551487 51.969985,-0.549060 51.969827,-0.548399 51.969841,-0.547924 51.970801,-0.546119 51.970898,-0.546119 51.970835,-0.546632 51.970593,-0.546971 51.970322,-0.547068 51.970169,-0.547121 51.969844,-0.547174 51.969739,-0.547104 51.969701,-0.547241 51.969563,-0.547291 51.969581,-0.547274 51.969531,-0.548066 51.968735,-0.548433 51.968502,-0.548790 51.968396,-0.549337 51.968367,-0.551061 51.968452,-0.551565 51.968548,-0.551547 51.968730,-0.551403 51.969109,-0.551427 51.969403,-0.551502 51.969762,-0.551465 51.969926,-0.551487 51.969985)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1418423</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L52263">89632d544d34...</a></td>
             <td>52262</td>
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
@@ -235,6 +218,23 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-0.548988 51.970537,-0.549189 51.970240,-0.549199 51.969895,-0.550126 51.969912,-0.551424 51.969986,-0.551499 51.970006,-0.551567 51.970101,-0.551613 51.970335,-0.551607 51.970535,-0.551176 51.970496,-0.550206 51.970484,-0.549395 51.970541,-0.548988 51.970537)))
+  </div>
+</details>
+                </td>
+                <td>ancient-woodland:1418423</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L4624">89632d544d34...</a></td>
+            <td>4623</td>
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.551487 51.969985,-0.549060 51.969827,-0.548399 51.969841,-0.547924 51.970801,-0.546119 51.970898,-0.546119 51.970835,-0.546632 51.970593,-0.546971 51.970322,-0.547068 51.970169,-0.547121 51.969844,-0.547174 51.969739,-0.547104 51.969701,-0.547241 51.969563,-0.547291 51.969581,-0.547274 51.969531,-0.548066 51.968735,-0.548433 51.968502,-0.548790 51.968396,-0.549337 51.968367,-0.551061 51.968452,-0.551565 51.968548,-0.551547 51.968730,-0.551403 51.969109,-0.551427 51.969403,-0.551502 51.969762,-0.551465 51.969926,-0.551487 51.969985)))
   </div>
 </details>
                 </td>
@@ -347,21 +347,25 @@ crossorigin="" />
     const datasetName = "ancient-woodland"
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
-    const mapComponent = new DLMaps.Map($mapElement).init({
-        initZoomCallback: function (featureGroup) {
-            console.log("initial load completed")
-            // do we need to check there isn't more than one shape?
-            const center = featureGroup.getBounds().getCenter()
-            const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
-            console.log(url)
-            if ($nationalMapLink) {
-                // only show this for the datasets we've added to the national map
-                $nationalMapLink.href = url
-                $nationalMapLink.classList.remove("js-hidden")
-            }
-        }
-    })
+    const mapParams = {
+    initZoomCallback: function (featureGroup, map) {
+          console.log("initial load completed")
+          // do we need to check there isn't more than one shape?
+          const center = featureGroup.getBounds().getCenter()
+          const zoom = map.getZoom()
+          let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+          console.log(url)
+          if ($nationalMapLink) {
+              // only show this for the datasets we've added to the national map
+              $nationalMapLink.href = url
+              $nationalMapLink.classList.remove("js-hidden")
+          }
+      }
+    }
+
+    mapParams.geojsonURLs = ["geometry.geojson"]
+
+    const mapComponent = new DLMaps.Map($mapElement).init(mapParams)
 </script>
 <script>
     // Initialise back to top
