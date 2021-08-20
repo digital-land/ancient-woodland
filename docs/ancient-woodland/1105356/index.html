@@ -174,20 +174,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -205,15 +203,16 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>name</th>
             <th>geometry</th>
             <th>geography</th>
-            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L46058">89632d544d34...</a></td>
             <td>46057</td>
+                <td>SKEFFINGTON/TILTON WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -227,11 +226,11 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1105356</td> 
-                <td>SKEFFINGTON/TILTON WOODS</td> 
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L46057">89632d544d34...</a></td>
             <td>46056</td>
+                <td>SKEFFINGTON/TILTON WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -245,29 +244,11 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1105356</td> 
-                <td>SKEFFINGTON/TILTON WOODS</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L46061">89632d544d34...</a></td>
-            <td>46060</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.888169 52.625691,-0.887703 52.625669,-0.887272 52.625512,-0.887318 52.625340,-0.887658 52.625101,-0.887841 52.624724,-0.888241 52.624946,-0.888433 52.625109,-0.888715 52.625619,-0.888169 52.625691)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1105356</td> 
-                <td>SKEFFINGTON/TILTON WOODS</td> 
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L46063">89632d544d34...</a></td>
             <td>46062</td>
+                <td>SKEFFINGTON/TILTON WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -281,29 +262,11 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1105356</td> 
-                <td>SKEFFINGTON/TILTON WOODS</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L46059">89632d544d34...</a></td>
-            <td>46058</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.880325 52.630665,-0.879722 52.630903,-0.879310 52.630977,-0.878864 52.630735,-0.878352 52.630358,-0.877675 52.629735,-0.877160 52.629070,-0.877036 52.628727,-0.877380 52.628826,-0.877754 52.628873,-0.878102 52.628868,-0.878222 52.629023,-0.878520 52.629218,-0.878951 52.629287,-0.879449 52.629209,-0.879901 52.629022,-0.880219 52.629074,-0.880612 52.629241,-0.881203 52.629254,-0.881508 52.628938,-0.882976 52.629380,-0.883689 52.629631,-0.883522 52.629766,-0.882819 52.630509,-0.882498 52.630772,-0.882303 52.630891,-0.881310 52.631320,-0.880705 52.631433,-0.880623 52.631268,-0.880547 52.630952,-0.880325 52.630665)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1105356</td> 
-                <td>SKEFFINGTON/TILTON WOODS</td> 
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L46062">89632d544d34...</a></td>
             <td>46061</td>
+                <td>SKEFFINGTON/TILTON WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -317,11 +280,47 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1105356</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L46061">89632d544d34...</a></td>
+            <td>46060</td>
                 <td>SKEFFINGTON/TILTON WOODS</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.888169 52.625691,-0.887703 52.625669,-0.887272 52.625512,-0.887318 52.625340,-0.887658 52.625101,-0.887841 52.624724,-0.888241 52.624946,-0.888433 52.625109,-0.888715 52.625619,-0.888169 52.625691)))
+  </div>
+</details>
+                </td>
+                <td>ancient-woodland:1105356</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L46059">89632d544d34...</a></td>
+            <td>46058</td>
+                <td>SKEFFINGTON/TILTON WOODS</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.880325 52.630665,-0.879722 52.630903,-0.879310 52.630977,-0.878864 52.630735,-0.878352 52.630358,-0.877675 52.629735,-0.877160 52.629070,-0.877036 52.628727,-0.877380 52.628826,-0.877754 52.628873,-0.878102 52.628868,-0.878222 52.629023,-0.878520 52.629218,-0.878951 52.629287,-0.879449 52.629209,-0.879901 52.629022,-0.880219 52.629074,-0.880612 52.629241,-0.881203 52.629254,-0.881508 52.628938,-0.882976 52.629380,-0.883689 52.629631,-0.883522 52.629766,-0.882819 52.630509,-0.882498 52.630772,-0.882303 52.630891,-0.881310 52.631320,-0.880705 52.631433,-0.880623 52.631268,-0.880547 52.630952,-0.880325 52.630665)))
+  </div>
+</details>
+                </td>
+                <td>ancient-woodland:1105356</td> 
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L46060">89632d544d34...</a></td>
             <td>46059</td>
+                <td>SKEFFINGTON/TILTON WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -335,7 +334,6 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1105356</td> 
-                <td>SKEFFINGTON/TILTON WOODS</td> 
         </tr>    </tbody>
 </table>
 

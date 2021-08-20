@@ -155,13 +155,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1101975</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Geography
-            </dt>
-            <dd class="govuk-summary-list__value">                ancient-woodland:1101975            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Name
             </dt>
             <dd class="govuk-summary-list__value">                OAK HOUGH            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Geography
+            </dt>
+            <dd class="govuk-summary-list__value">                ancient-woodland:1101975            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entry date
             </dt>
@@ -174,20 +174,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -205,15 +203,16 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>name</th>
             <th>geometry</th>
             <th>geography</th>
-            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40936">89632d544d34...</a></td>
             <td>40935</td>
+                <td>OAK HOUGH</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -227,29 +226,11 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1101975</td> 
-                <td>OAK HOUGH</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40935">89632d544d34...</a></td>
-            <td>40934</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-3.045904 54.208717,-3.045540 54.208715,-3.045435 54.208502,-3.045427 54.208376,-3.045730 54.208379,-3.046040 54.208279,-3.046062 54.208054,-3.046261 54.207195,-3.046393 54.207042,-3.046164 54.206839,-3.046221 54.206703,-3.046730 54.206361,-3.048425 54.206799,-3.048218 54.207095,-3.048094 54.207707,-3.048355 54.208216,-3.047430 54.208401,-3.047460 54.208595,-3.047445 54.208778,-3.045904 54.208717)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1101975</td> 
-                <td>OAK HOUGH</td> 
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40937">89632d544d34...</a></td>
             <td>40936</td>
+                <td>OAK HOUGH</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -263,7 +244,24 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1101975</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L40935">89632d544d34...</a></td>
+            <td>40934</td>
                 <td>OAK HOUGH</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-3.045904 54.208717,-3.045540 54.208715,-3.045435 54.208502,-3.045427 54.208376,-3.045730 54.208379,-3.046040 54.208279,-3.046062 54.208054,-3.046261 54.207195,-3.046393 54.207042,-3.046164 54.206839,-3.046221 54.206703,-3.046730 54.206361,-3.048425 54.206799,-3.048218 54.207095,-3.048094 54.207707,-3.048355 54.208216,-3.047430 54.208401,-3.047460 54.208595,-3.047445 54.208778,-3.045904 54.208717)))
+  </div>
+</details>
+                </td>
+                <td>ancient-woodland:1101975</td> 
         </tr>    </tbody>
 </table>
 

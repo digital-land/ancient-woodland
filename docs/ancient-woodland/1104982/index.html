@@ -155,13 +155,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1104982</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Name
-            </dt>
-            <dd class="govuk-summary-list__value">                ROLLESTONE WOOD            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Geography
             </dt>
             <dd class="govuk-summary-list__value">                ancient-woodland:1104982            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Name
+            </dt>
+            <dd class="govuk-summary-list__value">                ROLLESTONE WOOD            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entry date
             </dt>
@@ -174,20 +174,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -205,33 +203,16 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>name</th>
             <th>geometry</th>
             <th>geography</th>
-            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L44373">89632d544d34...</a></td>
-            <td>44372</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.439488 53.346769,-1.439601 53.346743,-1.440067 53.346766,-1.440764 53.346645,-1.440899 53.346777,-1.440963 53.347101,-1.440979 53.347424,-1.441119 53.347565,-1.441056 53.347785,-1.440959 53.347951,-1.440914 53.347996,-1.440713 53.347843,-1.440567 53.347573,-1.440269 53.347538,-1.439883 53.347445,-1.439505 53.347238,-1.439437 53.347117,-1.439387 53.346829,-1.439488 53.346769)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1104982</td> 
-                <td>ROLLESTONE WOOD</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L44372">89632d544d34...</a></td>
             <td>44371</td>
+                <td>ROLLESTONE WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -245,11 +226,29 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1104982</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L44373">89632d544d34...</a></td>
+            <td>44372</td>
                 <td>ROLLESTONE WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.439488 53.346769,-1.439601 53.346743,-1.440067 53.346766,-1.440764 53.346645,-1.440899 53.346777,-1.440963 53.347101,-1.440979 53.347424,-1.441119 53.347565,-1.441056 53.347785,-1.440959 53.347951,-1.440914 53.347996,-1.440713 53.347843,-1.440567 53.347573,-1.440269 53.347538,-1.439883 53.347445,-1.439505 53.347238,-1.439437 53.347117,-1.439387 53.346829,-1.439488 53.346769)))
+  </div>
+</details>
+                </td>
+                <td>ancient-woodland:1104982</td> 
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L44374">89632d544d34...</a></td>
             <td>44373</td>
+                <td>ROLLESTONE WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -263,7 +262,6 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1104982</td> 
-                <td>ROLLESTONE WOOD</td> 
         </tr>    </tbody>
 </table>
 

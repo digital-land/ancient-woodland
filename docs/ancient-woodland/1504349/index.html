@@ -155,13 +155,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1504349</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Geography
-            </dt>
-            <dd class="govuk-summary-list__value">                ancient-woodland:1504349            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Name
             </dt>
             <dd class="govuk-summary-list__value">                Brushey Baxhill, Roughet Wood, Quabbs            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Geography
+            </dt>
+            <dd class="govuk-summary-list__value">                ancient-woodland:1504349            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entry date
             </dt>
@@ -174,20 +174,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -205,33 +203,16 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>name</th>
             <th>geometry</th>
             <th>geography</th>
-            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L24189">89632d544d34...</a></td>
-            <td>24188</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.343903 52.081472,-2.343485 52.081748,-2.343359 52.081762,-2.343336 52.081692,-2.343263 52.081692,-2.343127 52.081724,-2.343041 52.081819,-2.342772 52.081760,-2.342523 52.081664,-2.342306 52.081545,-2.341899 52.081228,-2.341482 52.081105,-2.341589 52.080979,-2.341840 52.080858,-2.341967 52.081017,-2.342052 52.081032,-2.342524 52.080905,-2.342769 52.081160,-2.343640 52.080701,-2.343840 52.080948,-2.343875 52.081122,-2.344023 52.081223,-2.344039 52.081377,-2.343903 52.081472)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1504349</td> 
-                <td>Brushey Baxhill, Roughet Wood, Quabbs</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L24188">89632d544d34...</a></td>
             <td>24187</td>
+                <td>Brushey Baxhill, Roughet Wood, Quabbs</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -245,7 +226,24 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1504349</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L24189">89632d544d34...</a></td>
+            <td>24188</td>
                 <td>Brushey Baxhill, Roughet Wood, Quabbs</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.343903 52.081472,-2.343485 52.081748,-2.343359 52.081762,-2.343336 52.081692,-2.343263 52.081692,-2.343127 52.081724,-2.343041 52.081819,-2.342772 52.081760,-2.342523 52.081664,-2.342306 52.081545,-2.341899 52.081228,-2.341482 52.081105,-2.341589 52.080979,-2.341840 52.080858,-2.341967 52.081017,-2.342052 52.081032,-2.342524 52.080905,-2.342769 52.081160,-2.343640 52.080701,-2.343840 52.080948,-2.343875 52.081122,-2.344023 52.081223,-2.344039 52.081377,-2.343903 52.081472)))
+  </div>
+</details>
+                </td>
+                <td>ancient-woodland:1504349</td> 
         </tr>    </tbody>
 </table>
 

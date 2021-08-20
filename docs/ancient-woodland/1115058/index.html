@@ -174,20 +174,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -205,33 +203,16 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>name</th>
             <th>geometry</th>
             <th>geography</th>
-            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L29092">89632d544d34...</a></td>
-            <td>29091</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.127442 50.747058,-2.127000 50.747056,-2.126831 50.747638,-2.126459 50.747927,-2.126174 50.748028,-2.125180 50.748258,-2.125001 50.748378,-2.124108 50.748758,-2.123691 50.748789,-2.123430 50.748942,-2.123202 50.749223,-2.123034 50.749264,-2.123044 50.748365,-2.123744 50.748264,-2.126641 50.747622,-2.126810 50.746633,-2.126516 50.746426,-2.126277 50.745889,-2.126229 50.744532,-2.126249 50.744165,-2.126542 50.744004,-2.126666 50.744052,-2.126751 50.744284,-2.126942 50.744953,-2.127104 50.745812,-2.127442 50.747058)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1115058</td> 
-                <td>EAST MORDEN WITHY BED</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L29091">89632d544d34...</a></td>
             <td>29090</td>
+                <td>EAST MORDEN WITHY BED</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -245,7 +226,24 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1115058</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L29092">89632d544d34...</a></td>
+            <td>29091</td>
                 <td>EAST MORDEN WITHY BED</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.127442 50.747058,-2.127000 50.747056,-2.126831 50.747638,-2.126459 50.747927,-2.126174 50.748028,-2.125180 50.748258,-2.125001 50.748378,-2.124108 50.748758,-2.123691 50.748789,-2.123430 50.748942,-2.123202 50.749223,-2.123034 50.749264,-2.123044 50.748365,-2.123744 50.748264,-2.126641 50.747622,-2.126810 50.746633,-2.126516 50.746426,-2.126277 50.745889,-2.126229 50.744532,-2.126249 50.744165,-2.126542 50.744004,-2.126666 50.744052,-2.126751 50.744284,-2.126942 50.744953,-2.127104 50.745812,-2.127442 50.747058)))
+  </div>
+</details>
+                </td>
+                <td>ancient-woodland:1115058</td> 
         </tr>    </tbody>
 </table>
 

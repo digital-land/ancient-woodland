@@ -155,13 +155,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1105436</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Geography
-            </dt>
-            <dd class="govuk-summary-list__value">                ancient-woodland:1105436            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Name
             </dt>
             <dd class="govuk-summary-list__value">                COTTESMORE/WESTLAND            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Geography
+            </dt>
+            <dd class="govuk-summary-list__value">                ancient-woodland:1105436            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entry date
             </dt>
@@ -174,20 +174,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -205,33 +203,16 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>name</th>
             <th>geometry</th>
             <th>geography</th>
-            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L27293">89632d544d34...</a></td>
-            <td>27292</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.649633 52.707063,-0.649237 52.707224,-0.648759 52.707327,-0.648012 52.707744,-0.647676 52.708010,-0.647399 52.708160,-0.646993 52.708238,-0.646504 52.708217,-0.646136 52.708656,-0.645850 52.709144,-0.645793 52.709193,-0.645240 52.709397,-0.644203 52.709696,-0.643989 52.709733,-0.642450 52.709823,-0.642519 52.709730,-0.642196 52.709612,-0.642003 52.709337,-0.641849 52.709021,-0.641249 52.707343,-0.641180 52.707006,-0.641186 52.706663,-0.641367 52.706001,-0.641569 52.705438,-0.645244 52.706147,-0.645549 52.706268,-0.646868 52.706532,-0.646897 52.706495,-0.649633 52.707063)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1105436</td> 
-                <td>COTTESMORE/WESTLAND</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L27294">89632d544d34...</a></td>
             <td>27293</td>
+                <td>COTTESMORE/WESTLAND</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -245,7 +226,24 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1105436</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L27293">89632d544d34...</a></td>
+            <td>27292</td>
                 <td>COTTESMORE/WESTLAND</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.649633 52.707063,-0.649237 52.707224,-0.648759 52.707327,-0.648012 52.707744,-0.647676 52.708010,-0.647399 52.708160,-0.646993 52.708238,-0.646504 52.708217,-0.646136 52.708656,-0.645850 52.709144,-0.645793 52.709193,-0.645240 52.709397,-0.644203 52.709696,-0.643989 52.709733,-0.642450 52.709823,-0.642519 52.709730,-0.642196 52.709612,-0.642003 52.709337,-0.641849 52.709021,-0.641249 52.707343,-0.641180 52.707006,-0.641186 52.706663,-0.641367 52.706001,-0.641569 52.705438,-0.645244 52.706147,-0.645549 52.706268,-0.646868 52.706532,-0.646897 52.706495,-0.649633 52.707063)))
+  </div>
+</details>
+                </td>
+                <td>ancient-woodland:1105436</td> 
         </tr>    </tbody>
 </table>
 

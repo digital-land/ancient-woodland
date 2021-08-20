@@ -174,20 +174,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -205,15 +203,16 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>name</th>
             <th>geometry</th>
             <th>geography</th>
-            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28801">89632d544d34...</a></td>
             <td>28800</td>
+                <td>DUMBLETON DINGLE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -227,11 +226,11 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1106831</td> 
-                <td>DUMBLETON DINGLE</td> 
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28802">89632d544d34...</a></td>
             <td>28801</td>
+                <td>DUMBLETON DINGLE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -245,29 +244,11 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1106831</td> 
-                <td>DUMBLETON DINGLE</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28803">89632d544d34...</a></td>
-            <td>28802</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.435558 52.323508,-2.435045 52.322913,-2.434883 52.322604,-2.434695 52.322425,-2.434311 52.322153,-2.434237 52.322045,-2.434212 52.321947,-2.435359 52.321912,-2.436301 52.321988,-2.436864 52.322101,-2.437048 52.322092,-2.437119 52.322393,-2.437418 52.322670,-2.437417 52.322746,-2.437357 52.322835,-2.436399 52.323406,-2.436224 52.323440,-2.435828 52.323410,-2.435722 52.323449,-2.435656 52.323546,-2.435558 52.323508)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1106831</td> 
-                <td>DUMBLETON DINGLE</td> 
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28804">89632d544d34...</a></td>
             <td>28803</td>
+                <td>DUMBLETON DINGLE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -281,7 +262,24 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1106831</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L28803">89632d544d34...</a></td>
+            <td>28802</td>
                 <td>DUMBLETON DINGLE</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.435558 52.323508,-2.435045 52.322913,-2.434883 52.322604,-2.434695 52.322425,-2.434311 52.322153,-2.434237 52.322045,-2.434212 52.321947,-2.435359 52.321912,-2.436301 52.321988,-2.436864 52.322101,-2.437048 52.322092,-2.437119 52.322393,-2.437418 52.322670,-2.437417 52.322746,-2.437357 52.322835,-2.436399 52.323406,-2.436224 52.323440,-2.435828 52.323410,-2.435722 52.323449,-2.435656 52.323546,-2.435558 52.323508)))
+  </div>
+</details>
+                </td>
+                <td>ancient-woodland:1106831</td> 
         </tr>    </tbody>
 </table>
 

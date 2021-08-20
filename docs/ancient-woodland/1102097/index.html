@@ -174,20 +174,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -205,33 +203,16 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>name</th>
             <th>geometry</th>
             <th>geography</th>
-            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L47152">89632d544d34...</a></td>
-            <td>47151</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.944292 54.357634,-2.944243 54.357150,-2.944249 54.356737,-2.944835 54.356717,-2.945902 54.356520,-2.946743 54.356552,-2.947095 54.357001,-2.946232 54.358251,-2.946360 54.358899,-2.946337 54.358998,-2.946358 54.359103,-2.946165 54.359454,-2.946070 54.359547,-2.945650 54.359814,-2.945671 54.359825,-2.945396 54.360044,-2.944779 54.360182,-2.943681 54.360068,-2.943614 54.360032,-2.943469 54.359742,-2.943476 54.359459,-2.943524 54.359312,-2.943966 54.358582,-2.944212 54.358267,-2.944291 54.358030,-2.944292 54.357634)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1102097</td> 
-                <td>STATION SCAR WOOD</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L47151">89632d544d34...</a></td>
             <td>47150</td>
+                <td>STATION SCAR WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -245,11 +226,11 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1102097</td> 
-                <td>STATION SCAR WOOD</td> 
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L47150">89632d544d34...</a></td>
             <td>47149</td>
+                <td>STATION SCAR WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -263,11 +244,11 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1102097</td> 
-                <td>STATION SCAR WOOD</td> 
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L47149">89632d544d34...</a></td>
             <td>47148</td>
+                <td>STATION SCAR WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -281,7 +262,24 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1102097</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L47152">89632d544d34...</a></td>
+            <td>47151</td>
                 <td>STATION SCAR WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.944292 54.357634,-2.944243 54.357150,-2.944249 54.356737,-2.944835 54.356717,-2.945902 54.356520,-2.946743 54.356552,-2.947095 54.357001,-2.946232 54.358251,-2.946360 54.358899,-2.946337 54.358998,-2.946358 54.359103,-2.946165 54.359454,-2.946070 54.359547,-2.945650 54.359814,-2.945671 54.359825,-2.945396 54.360044,-2.944779 54.360182,-2.943681 54.360068,-2.943614 54.360032,-2.943469 54.359742,-2.943476 54.359459,-2.943524 54.359312,-2.943966 54.358582,-2.944212 54.358267,-2.944291 54.358030,-2.944292 54.357634)))
+  </div>
+</details>
+                </td>
+                <td>ancient-woodland:1102097</td> 
         </tr>    </tbody>
 </table>
 

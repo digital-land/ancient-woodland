@@ -155,13 +155,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1117200</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Name
-            </dt>
-            <dd class="govuk-summary-list__value">                SPINNEY/WHERSTEAD WOODS            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Geography
             </dt>
             <dd class="govuk-summary-list__value">                ancient-woodland:1117200            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Name
+            </dt>
+            <dd class="govuk-summary-list__value">                SPINNEY/WHERSTEAD WOODS            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entry date
             </dt>
@@ -174,20 +174,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -205,33 +203,16 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>name</th>
             <th>geometry</th>
             <th>geography</th>
-            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L46616">89632d544d34...</a></td>
-            <td>46615</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((1.109030 52.018291,1.111656 52.019520,1.112889 52.019027,1.113362 52.019416,1.113931 52.019834,1.114083 52.019911,1.115067 52.019105,1.115847 52.018581,1.116010 52.018412,1.116300 52.017997,1.117082 52.017251,1.116872 52.017099,1.116160 52.016362,1.115927 52.016274,1.115562 52.016253,1.115042 52.016336,1.114675 52.016464,1.114493 52.016474,1.114401 52.016515,1.114069 52.016451,1.113225 52.016478,1.112434 52.016584,1.111735 52.016772,1.110089 52.016784,1.109384 52.016892,1.109108 52.016981,1.107746 52.017683,1.109030 52.018291)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1117200</td> 
-                <td>SPINNEY/WHERSTEAD WOODS</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L46617">89632d544d34...</a></td>
             <td>46616</td>
+                <td>SPINNEY/WHERSTEAD WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -245,7 +226,24 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1117200</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L46616">89632d544d34...</a></td>
+            <td>46615</td>
                 <td>SPINNEY/WHERSTEAD WOODS</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((1.109030 52.018291,1.111656 52.019520,1.112889 52.019027,1.113362 52.019416,1.113931 52.019834,1.114083 52.019911,1.115067 52.019105,1.115847 52.018581,1.116010 52.018412,1.116300 52.017997,1.117082 52.017251,1.116872 52.017099,1.116160 52.016362,1.115927 52.016274,1.115562 52.016253,1.115042 52.016336,1.114675 52.016464,1.114493 52.016474,1.114401 52.016515,1.114069 52.016451,1.113225 52.016478,1.112434 52.016584,1.111735 52.016772,1.110089 52.016784,1.109384 52.016892,1.109108 52.016981,1.107746 52.017683,1.109030 52.018291)))
+  </div>
+</details>
+                </td>
+                <td>ancient-woodland:1117200</td> 
         </tr>    </tbody>
 </table>
 

@@ -174,20 +174,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -205,69 +203,16 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>name</th>
             <th>geometry</th>
             <th>geography</th>
-            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L51906">89632d544d34...</a></td>
-            <td>51905</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((1.659281 52.393196,1.659356 52.393187,1.659401 52.393274,1.660065 52.393239,1.659713 52.392663,1.658823 52.392869,1.658795 52.392898,1.658830 52.393301,1.659281 52.393196)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1117396</td> 
-                <td>WRENTHAM GREAT WOOD</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L51907">89632d544d34...</a></td>
-            <td>51906</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((1.660330 52.394133,1.660127 52.393438,1.658571 52.393554,1.658717 52.393698,1.659052 52.394236,1.659606 52.394099,1.659687 52.394214,1.659888 52.394240,1.659948 52.394319,1.660398 52.394354,1.660330 52.394133)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1117396</td> 
-                <td>WRENTHAM GREAT WOOD</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L51908">89632d544d34...</a></td>
-            <td>51907</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((1.658313 52.395465,1.658392 52.395355,1.658365 52.395030,1.658382 52.394642,1.658221 52.394504,1.656367 52.394987,1.656373 52.395175,1.656241 52.395464,1.656316 52.395528,1.656490 52.395513,1.656573 52.395806,1.658313 52.395465)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1117396</td> 
-                <td>WRENTHAM GREAT WOOD</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L51904">89632d544d34...</a></td>
             <td>51903</td>
+                <td>WRENTHAM GREAT WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -281,11 +226,65 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1117396</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L51908">89632d544d34...</a></td>
+            <td>51907</td>
                 <td>WRENTHAM GREAT WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((1.658313 52.395465,1.658392 52.395355,1.658365 52.395030,1.658382 52.394642,1.658221 52.394504,1.656367 52.394987,1.656373 52.395175,1.656241 52.395464,1.656316 52.395528,1.656490 52.395513,1.656573 52.395806,1.658313 52.395465)))
+  </div>
+</details>
+                </td>
+                <td>ancient-woodland:1117396</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L51907">89632d544d34...</a></td>
+            <td>51906</td>
+                <td>WRENTHAM GREAT WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((1.660330 52.394133,1.660127 52.393438,1.658571 52.393554,1.658717 52.393698,1.659052 52.394236,1.659606 52.394099,1.659687 52.394214,1.659888 52.394240,1.659948 52.394319,1.660398 52.394354,1.660330 52.394133)))
+  </div>
+</details>
+                </td>
+                <td>ancient-woodland:1117396</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L51906">89632d544d34...</a></td>
+            <td>51905</td>
+                <td>WRENTHAM GREAT WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((1.659281 52.393196,1.659356 52.393187,1.659401 52.393274,1.660065 52.393239,1.659713 52.392663,1.658823 52.392869,1.658795 52.392898,1.658830 52.393301,1.659281 52.393196)))
+  </div>
+</details>
+                </td>
+                <td>ancient-woodland:1117396</td> 
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L51905">89632d544d34...</a></td>
             <td>51904</td>
+                <td>WRENTHAM GREAT WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -299,7 +298,6 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1117396</td> 
-                <td>WRENTHAM GREAT WOOD</td> 
         </tr>    </tbody>
 </table>
 

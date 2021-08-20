@@ -174,20 +174,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -205,15 +203,16 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>name</th>
             <th>geometry</th>
             <th>geography</th>
-            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L26083">89632d544d34...</a></td>
             <td>26082</td>
+                <td>CLEAVE WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -227,29 +226,11 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1114664</td> 
-                <td>CLEAVE WOOD</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L26081">89632d544d34...</a></td>
-            <td>26080</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-3.808507 50.671140,-3.808652 50.671046,-3.808853 50.671031,-3.809198 50.670920,-3.809286 50.670865,-3.809306 50.670804,-3.809259 50.670687,-3.809147 50.670567,-3.809245 50.670537,-3.809226 50.670492,-3.808973 50.670332,-3.808903 50.670246,-3.808894 50.670223,-3.808982 50.670127,-3.808887 50.669903,-3.808717 50.669730,-3.808518 50.669613,-3.808679 50.669451,-3.808656 50.669141,-3.808777 50.668862,-3.808754 50.668812,-3.808395 50.668578,-3.808342 50.668455,-3.808286 50.668144,-3.808394 50.668143,-3.808904 50.667832,-3.809257 50.667691,-3.809392 50.667790,-3.809432 50.667770,-3.809569 50.667867,-3.809727 50.667878,-3.810075 50.668243,-3.810160 50.668440,-3.810390 50.668776,-3.810452 50.668887,-3.810632 50.669678,-3.810650 50.670066,-3.810606 50.670182,-3.810012 50.671021,-3.809936 50.671115,-3.809640 50.671319,-3.809194 50.671409,-3.808902 50.671427,-3.808793 50.671389,-3.808507 50.671140)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1114664</td> 
-                <td>CLEAVE WOOD</td> 
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L26082">89632d544d34...</a></td>
             <td>26081</td>
+                <td>CLEAVE WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -263,7 +244,24 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1114664</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L26081">89632d544d34...</a></td>
+            <td>26080</td>
                 <td>CLEAVE WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-3.808507 50.671140,-3.808652 50.671046,-3.808853 50.671031,-3.809198 50.670920,-3.809286 50.670865,-3.809306 50.670804,-3.809259 50.670687,-3.809147 50.670567,-3.809245 50.670537,-3.809226 50.670492,-3.808973 50.670332,-3.808903 50.670246,-3.808894 50.670223,-3.808982 50.670127,-3.808887 50.669903,-3.808717 50.669730,-3.808518 50.669613,-3.808679 50.669451,-3.808656 50.669141,-3.808777 50.668862,-3.808754 50.668812,-3.808395 50.668578,-3.808342 50.668455,-3.808286 50.668144,-3.808394 50.668143,-3.808904 50.667832,-3.809257 50.667691,-3.809392 50.667790,-3.809432 50.667770,-3.809569 50.667867,-3.809727 50.667878,-3.810075 50.668243,-3.810160 50.668440,-3.810390 50.668776,-3.810452 50.668887,-3.810632 50.669678,-3.810650 50.670066,-3.810606 50.670182,-3.810012 50.671021,-3.809936 50.671115,-3.809640 50.671319,-3.809194 50.671409,-3.808902 50.671427,-3.808793 50.671389,-3.808507 50.671140)))
+  </div>
+</details>
+                </td>
+                <td>ancient-woodland:1114664</td> 
         </tr>    </tbody>
 </table>
 

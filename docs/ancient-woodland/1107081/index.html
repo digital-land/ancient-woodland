@@ -155,13 +155,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1107081</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Geography
-            </dt>
-            <dd class="govuk-summary-list__value">                ancient-woodland:1107081            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Name
             </dt>
             <dd class="govuk-summary-list__value">                COWLEY/WARDS WOODS            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Geography
+            </dt>
+            <dd class="govuk-summary-list__value">                ancient-woodland:1107081            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entry date
             </dt>
@@ -174,20 +174,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -205,33 +203,16 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>name</th>
             <th>geometry</th>
             <th>geography</th>
-            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L27463">89632d544d34...</a></td>
-            <td>27462</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.056912 51.824200,-2.056242 51.824262,-2.055470 51.824603,-2.055378 51.824565,-2.054575 51.824642,-2.054174 51.824517,-2.054193 51.824451,-2.054168 51.824437,-2.053725 51.824498,-2.052419 51.824488,-2.051531 51.824667,-2.051064 51.824810,-2.050852 51.824910,-2.050704 51.824922,-2.050592 51.824844,-2.050808 51.824710,-2.051078 51.824637,-2.052520 51.824329,-2.052723 51.824328,-2.054200 51.824130,-2.054609 51.824110,-2.055754 51.823920,-2.055778 51.823991,-2.056027 51.824006,-2.056746 51.823925,-2.056862 51.823862,-2.056942 51.823987,-2.056909 51.824031,-2.056912 51.824200)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1107081</td> 
-                <td>COWLEY/WARDS WOODS</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L27464">89632d544d34...</a></td>
             <td>27463</td>
+                <td>COWLEY/WARDS WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -245,7 +226,24 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1107081</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L27463">89632d544d34...</a></td>
+            <td>27462</td>
                 <td>COWLEY/WARDS WOODS</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.056912 51.824200,-2.056242 51.824262,-2.055470 51.824603,-2.055378 51.824565,-2.054575 51.824642,-2.054174 51.824517,-2.054193 51.824451,-2.054168 51.824437,-2.053725 51.824498,-2.052419 51.824488,-2.051531 51.824667,-2.051064 51.824810,-2.050852 51.824910,-2.050704 51.824922,-2.050592 51.824844,-2.050808 51.824710,-2.051078 51.824637,-2.052520 51.824329,-2.052723 51.824328,-2.054200 51.824130,-2.054609 51.824110,-2.055754 51.823920,-2.055778 51.823991,-2.056027 51.824006,-2.056746 51.823925,-2.056862 51.823862,-2.056942 51.823987,-2.056909 51.824031,-2.056912 51.824200)))
+  </div>
+</details>
+                </td>
+                <td>ancient-woodland:1107081</td> 
         </tr>    </tbody>
 </table>
 

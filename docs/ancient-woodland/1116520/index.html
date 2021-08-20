@@ -174,20 +174,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -205,33 +203,16 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>name</th>
             <th>geometry</th>
             <th>geography</th>
-            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L32446">89632d544d34...</a></td>
-            <td>32445</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((0.287848 52.040227,0.291016 52.037067,0.291086 52.036966,0.293842 52.034205,0.293459 52.033945,0.292493 52.033404,0.291314 52.032601,0.290868 52.032313,0.290829 52.032318,0.290803 52.032525,0.290757 52.032622,0.290619 52.032727,0.290545 52.032870,0.290198 52.033105,0.289817 52.033520,0.289724 52.033774,0.289737 52.033868,0.289705 52.033972,0.289727 52.034258,0.289670 52.034373,0.289660 52.034495,0.289523 52.034666,0.289488 52.034775,0.289562 52.034981,0.289383 52.035158,0.289335 52.035266,0.288929 52.035652,0.288847 52.035782,0.288778 52.035989,0.288653 52.036139,0.288555 52.036243,0.288254 52.036447,0.287900 52.036772,0.287411 52.037013,0.286996 52.037268,0.286777 52.037478,0.286437 52.037701,0.286109 52.038110,0.285841 52.038287,0.285633 52.038381,0.285886 52.038735,0.285998 52.038981,0.286240 52.039244,0.286402 52.039341,0.286518 52.039463,0.287026 52.039782,0.287848 52.040227)))
-  </div>
-</details>
-                </td>
-                <td>ancient-woodland:1116520</td> 
-                <td>HALES WOOD</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L32444">89632d544d34...</a></td>
             <td>32443</td>
+                <td>HALES WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -245,7 +226,24 @@ crossorigin="" />
 </details>
                 </td>
                 <td>ancient-woodland:1116520</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L32446">89632d544d34...</a></td>
+            <td>32445</td>
                 <td>HALES WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((0.287848 52.040227,0.291016 52.037067,0.291086 52.036966,0.293842 52.034205,0.293459 52.033945,0.292493 52.033404,0.291314 52.032601,0.290868 52.032313,0.290829 52.032318,0.290803 52.032525,0.290757 52.032622,0.290619 52.032727,0.290545 52.032870,0.290198 52.033105,0.289817 52.033520,0.289724 52.033774,0.289737 52.033868,0.289705 52.033972,0.289727 52.034258,0.289670 52.034373,0.289660 52.034495,0.289523 52.034666,0.289488 52.034775,0.289562 52.034981,0.289383 52.035158,0.289335 52.035266,0.288929 52.035652,0.288847 52.035782,0.288778 52.035989,0.288653 52.036139,0.288555 52.036243,0.288254 52.036447,0.287900 52.036772,0.287411 52.037013,0.286996 52.037268,0.286777 52.037478,0.286437 52.037701,0.286109 52.038110,0.285841 52.038287,0.285633 52.038381,0.285886 52.038735,0.285998 52.038981,0.286240 52.039244,0.286402 52.039341,0.286518 52.039463,0.287026 52.039782,0.287848 52.040227)))
+  </div>
+</details>
+                </td>
+                <td>ancient-woodland:1116520</td> 
         </tr>    </tbody>
 </table>
 
