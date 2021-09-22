@@ -152,16 +152,17 @@ crossorigin="" />
     </nav>
 
 <div id="record">
-<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
+<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds">
+        <!-- this section can probably be removed. Entities no longer have a resource field<article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1120756</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Name
-            </dt>
-            <dd class="govuk-summary-list__value">                BIG WOOD            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Geography
             </dt>
             <dd class="govuk-summary-list__value">                ancient-woodland:1120756            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Name
+            </dt>
+            <dd class="govuk-summary-list__value">                BIG WOOD            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entity
             </dt>
@@ -207,33 +208,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geometry</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
+            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22170">89632d544d34...</a></td>
-            <td>22169</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.973895 52.874976,-2.973286 52.875006,-2.973247 52.874977,-2.973311 52.874912,-2.973467 52.874858,-2.973922 52.874777,-2.974461 52.874772,-2.974961 52.874876,-2.976127 52.875407,-2.976268 52.875705,-2.976333 52.876007,-2.976318 52.876088,-2.976157 52.876242,-2.975990 52.876284,-2.975652 52.876277,-2.975086 52.876126,-2.974763 52.875923,-2.974441 52.875654,-2.974358 52.875526,-2.974257 52.875207,-2.974136 52.875058,-2.973895 52.874976)))
-  </div>
-</details>
-                </td>
-                <td>BIG WOOD</td> 
-                <td>ancient-woodland:1120756</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22142">89632d544d34...</a></td>
             <td>22141</td>
+                <td>ancient-woodland:1120756</td> 
+                <td>BIG WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -246,12 +231,12 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>BIG WOOD</td> 
-                <td>ancient-woodland:1120756</td> 
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22169">89632d544d34...</a></td>
             <td>22168</td>
+                <td>ancient-woodland:1120756</td> 
+                <td>BIG WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -264,12 +249,30 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>BIG WOOD</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22170">89632d544d34...</a></td>
+            <td>22169</td>
                 <td>ancient-woodland:1120756</td> 
+                <td>BIG WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.973895 52.874976,-2.973286 52.875006,-2.973247 52.874977,-2.973311 52.874912,-2.973467 52.874858,-2.973922 52.874777,-2.974461 52.874772,-2.974961 52.874876,-2.976127 52.875407,-2.976268 52.875705,-2.976333 52.876007,-2.976318 52.876088,-2.976157 52.876242,-2.975990 52.876284,-2.975652 52.876277,-2.975086 52.876126,-2.974763 52.875923,-2.974441 52.875654,-2.974358 52.875526,-2.974257 52.875207,-2.974136 52.875058,-2.973895 52.874976)))
+  </div>
+</details>
+                </td>
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22171">89632d544d34...</a></td>
             <td>22170</td>
+                <td>ancient-woodland:1120756</td> 
+                <td>BIG WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -282,8 +285,6 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>BIG WOOD</td> 
-                <td>ancient-woodland:1120756</td> 
         </tr>    </tbody>
 </table>
 

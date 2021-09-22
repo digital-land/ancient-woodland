@@ -152,16 +152,17 @@ crossorigin="" />
     </nav>
 
 <div id="record">
-<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
+<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds">
+        <!-- this section can probably be removed. Entities no longer have a resource field<article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1109198</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Geography
-            </dt>
-            <dd class="govuk-summary-list__value">                ancient-woodland:1109198            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Name
             </dt>
             <dd class="govuk-summary-list__value">                BADGER COPSE            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Geography
+            </dt>
+            <dd class="govuk-summary-list__value">                ancient-woodland:1109198            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entity
             </dt>
@@ -207,15 +208,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geometry</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
+            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21142">89632d544d34...</a></td>
             <td>21141</td>
+                <td>ancient-woodland:1109198</td> 
+                <td>BADGER COPSE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -228,30 +231,12 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>BADGER COPSE</td> 
-                <td>ancient-woodland:1109198</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21143">89632d544d34...</a></td>
-            <td>21142</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-3.165637 51.089141,-3.164666 51.088872,-3.164599 51.088806,-3.166348 51.087963,-3.166857 51.087599,-3.167167 51.087259,-3.168088 51.087296,-3.168583 51.087437,-3.168399 51.087558,-3.167209 51.088159,-3.166159 51.088788,-3.166064 51.088868,-3.166065 51.088911,-3.165637 51.089141)))
-  </div>
-</details>
-                </td>
-                <td>BADGER COPSE</td> 
-                <td>ancient-woodland:1109198</td> 
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21144">89632d544d34...</a></td>
             <td>21143</td>
+                <td>ancient-woodland:1109198</td> 
+                <td>BADGER COPSE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -264,12 +249,30 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>BADGER COPSE</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21143">89632d544d34...</a></td>
+            <td>21142</td>
                 <td>ancient-woodland:1109198</td> 
+                <td>BADGER COPSE</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-3.165637 51.089141,-3.164666 51.088872,-3.164599 51.088806,-3.166348 51.087963,-3.166857 51.087599,-3.167167 51.087259,-3.168088 51.087296,-3.168583 51.087437,-3.168399 51.087558,-3.167209 51.088159,-3.166159 51.088788,-3.166064 51.088868,-3.166065 51.088911,-3.165637 51.089141)))
+  </div>
+</details>
+                </td>
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L21145">89632d544d34...</a></td>
             <td>21144</td>
+                <td>ancient-woodland:1109198</td> 
+                <td>BADGER COPSE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -282,8 +285,6 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>BADGER COPSE</td> 
-                <td>ancient-woodland:1109198</td> 
         </tr>    </tbody>
 </table>
 

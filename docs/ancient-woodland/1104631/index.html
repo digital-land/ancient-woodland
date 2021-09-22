@@ -152,16 +152,17 @@ crossorigin="" />
     </nav>
 
 <div id="record">
-<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
+<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds">
+        <!-- this section can probably be removed. Entities no longer have a resource field<article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1104631</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Name
-            </dt>
-            <dd class="govuk-summary-list__value">                RANGEMOOR AND OUSLEY WOODS            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Geography
             </dt>
             <dd class="govuk-summary-list__value">                ancient-woodland:1104631            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Name
+            </dt>
+            <dd class="govuk-summary-list__value">                RANGEMOOR AND OUSLEY WOODS            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entity
             </dt>
@@ -207,33 +208,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geometry</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
+            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L43673">89632d544d34...</a></td>
-            <td>43672</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.822454 53.003416,-1.821796 53.003174,-1.821451 53.003098,-1.821399 53.003049,-1.821113 53.002970,-1.820185 53.002917,-1.819969 53.002960,-1.819920 53.002891,-1.819570 53.002838,-1.819470 53.002761,-1.819465 53.002723,-1.819302 53.002678,-1.819252 53.002633,-1.819039 53.002607,-1.818370 53.002320,-1.817977 53.002081,-1.817121 53.001822,-1.815810 53.001280,-1.815091 53.000650,-1.814835 53.000320,-1.814709 53.000088,-1.814643 52.999878,-1.814636 52.999691,-1.814482 52.999210,-1.814588 52.998719,-1.814577 52.998591,-1.815251 52.998526,-1.815262 52.998484,-1.815383 52.998679,-1.815379 52.998894,-1.815445 52.999062,-1.815344 52.999220,-1.815389 52.999365,-1.815335 52.999445,-1.815406 52.999486,-1.815443 52.999598,-1.815591 52.999665,-1.815688 52.999770,-1.815794 52.999962,-1.815737 53.000071,-1.815954 53.000338,-1.816047 53.000401,-1.816260 53.000428,-1.816347 53.000580,-1.816605 53.000714,-1.816791 53.000768,-1.817057 53.001020,-1.817362 53.001069,-1.817428 53.001225,-1.817723 53.001265,-1.817841 53.001427,-1.817991 53.001523,-1.818784 53.001826,-1.819069 53.001892,-1.819409 53.002087,-1.819695 53.002122,-1.820300 53.002403,-1.821042 53.002412,-1.821357 53.002577,-1.821696 53.002574,-1.821905 53.002659,-1.822250 53.002513,-1.822383 53.002519,-1.822374 53.002538,-1.823322 53.002932,-1.823893 53.003213,-1.824117 53.003381,-1.824373 53.003634,-1.824011 53.003857,-1.824004 53.003929,-1.823737 53.004128,-1.823003 53.003675,-1.822454 53.003416)))
-  </div>
-</details>
-                </td>
-                <td>RANGEMOOR AND OUSLEY WOODS</td> 
-                <td>ancient-woodland:1104631</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L43672">89632d544d34...</a></td>
             <td>43671</td>
+                <td>ancient-woodland:1104631</td> 
+                <td>RANGEMOOR AND OUSLEY WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -246,12 +231,30 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>RANGEMOOR AND OUSLEY WOODS</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L43673">89632d544d34...</a></td>
+            <td>43672</td>
                 <td>ancient-woodland:1104631</td> 
+                <td>RANGEMOOR AND OUSLEY WOODS</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.822454 53.003416,-1.821796 53.003174,-1.821451 53.003098,-1.821399 53.003049,-1.821113 53.002970,-1.820185 53.002917,-1.819969 53.002960,-1.819920 53.002891,-1.819570 53.002838,-1.819470 53.002761,-1.819465 53.002723,-1.819302 53.002678,-1.819252 53.002633,-1.819039 53.002607,-1.818370 53.002320,-1.817977 53.002081,-1.817121 53.001822,-1.815810 53.001280,-1.815091 53.000650,-1.814835 53.000320,-1.814709 53.000088,-1.814643 52.999878,-1.814636 52.999691,-1.814482 52.999210,-1.814588 52.998719,-1.814577 52.998591,-1.815251 52.998526,-1.815262 52.998484,-1.815383 52.998679,-1.815379 52.998894,-1.815445 52.999062,-1.815344 52.999220,-1.815389 52.999365,-1.815335 52.999445,-1.815406 52.999486,-1.815443 52.999598,-1.815591 52.999665,-1.815688 52.999770,-1.815794 52.999962,-1.815737 53.000071,-1.815954 53.000338,-1.816047 53.000401,-1.816260 53.000428,-1.816347 53.000580,-1.816605 53.000714,-1.816791 53.000768,-1.817057 53.001020,-1.817362 53.001069,-1.817428 53.001225,-1.817723 53.001265,-1.817841 53.001427,-1.817991 53.001523,-1.818784 53.001826,-1.819069 53.001892,-1.819409 53.002087,-1.819695 53.002122,-1.820300 53.002403,-1.821042 53.002412,-1.821357 53.002577,-1.821696 53.002574,-1.821905 53.002659,-1.822250 53.002513,-1.822383 53.002519,-1.822374 53.002538,-1.823322 53.002932,-1.823893 53.003213,-1.824117 53.003381,-1.824373 53.003634,-1.824011 53.003857,-1.824004 53.003929,-1.823737 53.004128,-1.823003 53.003675,-1.822454 53.003416)))
+  </div>
+</details>
+                </td>
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L43671">89632d544d34...</a></td>
             <td>43670</td>
+                <td>ancient-woodland:1104631</td> 
+                <td>RANGEMOOR AND OUSLEY WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -264,12 +267,12 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>RANGEMOOR AND OUSLEY WOODS</td> 
-                <td>ancient-woodland:1104631</td> 
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L43674">89632d544d34...</a></td>
             <td>43673</td>
+                <td>ancient-woodland:1104631</td> 
+                <td>RANGEMOOR AND OUSLEY WOODS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -282,8 +285,6 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>RANGEMOOR AND OUSLEY WOODS</td> 
-                <td>ancient-woodland:1104631</td> 
         </tr>    </tbody>
 </table>
 

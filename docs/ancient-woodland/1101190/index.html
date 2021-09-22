@@ -152,16 +152,17 @@ crossorigin="" />
     </nav>
 
 <div id="record">
-<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
+<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds">
+        <!-- this section can probably be removed. Entities no longer have a resource field<article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1101190</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Name
-            </dt>
-            <dd class="govuk-summary-list__value">                BILLSMOOR PARK            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Geography
             </dt>
             <dd class="govuk-summary-list__value">                ancient-woodland:1101190            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Name
+            </dt>
+            <dd class="govuk-summary-list__value">                BILLSMOOR PARK            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entity
             </dt>
@@ -207,51 +208,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geometry</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
+            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22234">89632d544d34...</a></td>
-            <td>22233</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.088805 55.258781,-2.088214 55.258711,-2.088196 55.258657,-2.088294 55.258554,-2.088411 55.258510,-2.088920 55.258560,-2.089024 55.258589,-2.089244 55.258746,-2.089505 55.258765,-2.089712 55.258830,-2.089842 55.258914,-2.089893 55.259034,-2.089838 55.259097,-2.089652 55.259135,-2.088805 55.258781)))
-  </div>
-</details>
-                </td>
-                <td>BILLSMOOR PARK</td> 
-                <td>ancient-woodland:1101190</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22235">89632d544d34...</a></td>
-            <td>22234</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.087905 55.262142,-2.088051 55.262138,-2.088193 55.262052,-2.088274 55.262048,-2.088717 55.262283,-2.089150 55.262410,-2.089272 55.262490,-2.088990 55.262740,-2.088805 55.262755,-2.088586 55.262603,-2.088271 55.262523,-2.088081 55.262336,-2.087832 55.262277,-2.087804 55.262198,-2.087905 55.262142)))
-  </div>
-</details>
-                </td>
-                <td>BILLSMOOR PARK</td> 
-                <td>ancient-woodland:1101190</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22238">89632d544d34...</a></td>
             <td>22237</td>
+                <td>ancient-woodland:1101190</td> 
+                <td>BILLSMOOR PARK</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -264,12 +231,30 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>BILLSMOOR PARK</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22235">89632d544d34...</a></td>
+            <td>22234</td>
                 <td>ancient-woodland:1101190</td> 
+                <td>BILLSMOOR PARK</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.087905 55.262142,-2.088051 55.262138,-2.088193 55.262052,-2.088274 55.262048,-2.088717 55.262283,-2.089150 55.262410,-2.089272 55.262490,-2.088990 55.262740,-2.088805 55.262755,-2.088586 55.262603,-2.088271 55.262523,-2.088081 55.262336,-2.087832 55.262277,-2.087804 55.262198,-2.087905 55.262142)))
+  </div>
+</details>
+                </td>
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22237">89632d544d34...</a></td>
             <td>22236</td>
+                <td>ancient-woodland:1101190</td> 
+                <td>BILLSMOOR PARK</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -282,12 +267,30 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>BILLSMOOR PARK</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22234">89632d544d34...</a></td>
+            <td>22233</td>
                 <td>ancient-woodland:1101190</td> 
+                <td>BILLSMOOR PARK</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.088805 55.258781,-2.088214 55.258711,-2.088196 55.258657,-2.088294 55.258554,-2.088411 55.258510,-2.088920 55.258560,-2.089024 55.258589,-2.089244 55.258746,-2.089505 55.258765,-2.089712 55.258830,-2.089842 55.258914,-2.089893 55.259034,-2.089838 55.259097,-2.089652 55.259135,-2.088805 55.258781)))
+  </div>
+</details>
+                </td>
         </tr>        <tr>
             <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L22236">89632d544d34...</a></td>
             <td>22235</td>
+                <td>ancient-woodland:1101190</td> 
+                <td>BILLSMOOR PARK</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -300,8 +303,6 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>BILLSMOOR PARK</td> 
-                <td>ancient-woodland:1101190</td> 
         </tr>    </tbody>
 </table>
 

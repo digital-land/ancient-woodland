@@ -152,7 +152,8 @@ crossorigin="" />
     </nav>
 
 <div id="record">
-<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
+<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds">
+        <!-- this section can probably be removed. Entities no longer have a resource field<article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/ancient-woodland/ancient-woodland/1106716</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Geography
@@ -207,51 +208,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geometry</th>
-            <th>name</th>
             <th>geography</th>
+            <th>name</th>
+            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L43711">89632d544d34...</a></td>
-            <td>43710</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.385340 52.184598,-2.385384 52.184512,-2.384033 52.184597,-2.383995 52.184347,-2.383594 52.184046,-2.383905 52.184000,-2.384380 52.184114,-2.384614 52.184081,-2.385177 52.184081,-2.385548 52.184030,-2.385736 52.184064,-2.386194 52.183952,-2.386372 52.183971,-2.386440 52.184032,-2.386422 52.184209,-2.386288 52.184463,-2.386158 52.184610,-2.385338 52.184632,-2.385340 52.184598)))
-  </div>
-</details>
-                </td>
-                <td>RAVENHILLS WOOD</td> 
-                <td>ancient-woodland:1106716</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
-            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L43712">89632d544d34...</a></td>
-            <td>43711</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.391780 52.186497,-2.391711 52.185649,-2.391602 52.185392,-2.391609 52.185226,-2.391399 52.184909,-2.391237 52.184426,-2.390677 52.183423,-2.390485 52.183142,-2.390196 52.183208,-2.390181 52.183175,-2.390260 52.183033,-2.390130 52.182391,-2.390109 52.182021,-2.390328 52.181942,-2.390648 52.182015,-2.390806 52.181863,-2.391114 52.181773,-2.391221 52.182136,-2.391453 52.182381,-2.391600 52.182950,-2.391737 52.183223,-2.392150 52.183139,-2.392333 52.183123,-2.392358 52.183153,-2.392539 52.183773,-2.392556 52.184122,-2.392405 52.184219,-2.392416 52.184311,-2.392216 52.184381,-2.392571 52.185078,-2.393104 52.185875,-2.393173 52.186179,-2.393143 52.186379,-2.392715 52.186396,-2.391780 52.186497)))
-  </div>
-</details>
-                </td>
-                <td>RAVENHILLS WOOD</td> 
-                <td>ancient-woodland:1106716</td> 
-        </tr>        <tr>
-            <td>2021-05-26</td>
             <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L43713">89632d544d34...</a></td>
             <td>43712</td>
+                <td>ancient-woodland:1106716</td> 
+                <td>RAVENHILLS WOOD</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -264,8 +231,42 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>RAVENHILLS WOOD</td> 
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L43712">89632d544d34...</a></td>
+            <td>43711</td>
                 <td>ancient-woodland:1106716</td> 
+                <td>RAVENHILLS WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.391780 52.186497,-2.391711 52.185649,-2.391602 52.185392,-2.391609 52.185226,-2.391399 52.184909,-2.391237 52.184426,-2.390677 52.183423,-2.390485 52.183142,-2.390196 52.183208,-2.390181 52.183175,-2.390260 52.183033,-2.390130 52.182391,-2.390109 52.182021,-2.390328 52.181942,-2.390648 52.182015,-2.390806 52.181863,-2.391114 52.181773,-2.391221 52.182136,-2.391453 52.182381,-2.391600 52.182950,-2.391737 52.183223,-2.392150 52.183139,-2.392333 52.183123,-2.392358 52.183153,-2.392539 52.183773,-2.392556 52.184122,-2.392405 52.184219,-2.392416 52.184311,-2.392216 52.184381,-2.392571 52.185078,-2.393104 52.185875,-2.393173 52.186179,-2.393143 52.186379,-2.392715 52.186396,-2.391780 52.186497)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-26</td>
+            <td><a href="https://github.com/digital-land/ancient-woodland-collection/tree/main/transformed/ancient-woodland/89632d544d34d2745cbfc2ec034fbdae2a74c235ea07acd67d920c4cebddc3c0.csv#L43711">89632d544d34...</a></td>
+            <td>43710</td>
+                <td>ancient-woodland:1106716</td> 
+                <td>RAVENHILLS WOOD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.385340 52.184598,-2.385384 52.184512,-2.384033 52.184597,-2.383995 52.184347,-2.383594 52.184046,-2.383905 52.184000,-2.384380 52.184114,-2.384614 52.184081,-2.385177 52.184081,-2.385548 52.184030,-2.385736 52.184064,-2.386194 52.183952,-2.386372 52.183971,-2.386440 52.184032,-2.386422 52.184209,-2.386288 52.184463,-2.386158 52.184610,-2.385338 52.184632,-2.385340 52.184598)))
+  </div>
+</details>
+                </td>
         </tr>    </tbody>
 </table>
 
